@@ -1,0 +1,316 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {}
+        },
+        "vendor": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "options": {
+          "type": "options",
+          "settings": {
+            "variant-style": "dropdowns",
+            "size-chart-enabled": true,
+            "size-chart-option": "size",
+            "size-chart-content": ""
+          }
+        },
+        "buy-buttons": {
+          "type": "buy-buttons",
+          "settings": {
+            "smart-payment-enabled": true
+          }
+        },
+        "pickup": {
+          "type": "pickup",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapsible-row-enabled": false,
+            "heading": "Description"
+          }
+        },
+        "complementary-products": {
+          "type": "complementary-products",
+          "settings": {
+            "title": "Pairs well with",
+            "max-products": 2,
+            "collapsible-row-enabled": false
+          }
+        },
+        "social-sharing": {
+          "type": "social-sharing",
+          "settings": {
+            "facebook-enabled": true,
+            "x-enabled": true,
+            "pinterest-enabled": true,
+            "email-enabled": true,
+            "url-enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "vendor",
+        "price",
+        "options",
+        "buy-buttons",
+        "pickup",
+        "description",
+        "complementary-products",
+        "social-sharing"
+      ],
+      "settings": {
+        "container-width": "4",
+        "spacing-above": true,
+        "spacing-below": true,
+        "media-layout": "thumbnails",
+        "text-column-width": 30,
+        "media-gap": 8,
+        "column-spacing": "close",
+        "text-alignment": "left",
+        "thumbnail-width": 80,
+        "heading-enabled": false,
+        "heading-sizes-enabled": true,
+        "heading-size": 40,
+        "breadcrumbs-enabled": true,
+        "modal-enabled": true,
+        "variant-scroll-enabled": true,
+        "image-zoom-enabled": true,
+        "loop-enabled": false,
+        "mobile-media-layout": "slideshow"
+      }
+    },
+    "4e9385a7-14ff-4617-8542-ed651a7ec51f": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "white-text": true,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "overline": "",
+        "title": "Image with text",
+        "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.</p>",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
+    "edb6b679-1b0d-4698-be1b-efe7bb590de9": {
+      "type": "featured-collection",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "white-text": false,
+        "display-type": "slideshow",
+        "products-per-row--desktop": "3",
+        "collection": "",
+        "max-products": 8,
+        "heading": "Collection name",
+        "products-per-row--mobile": "1"
+      }
+    },
+    "5041891c-740e-40b2-a00d-936d32f31a4c": {
+      "type": "featured-video",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "white-text": true,
+        "text-width": "medium",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "heading-type": "featured-heading",
+        "autoplay": true,
+        "video-display-type": "aspect-ratio",
+        "aspect-ratio": 46,
+        "play-button-style": "solid",
+        "overlay-style": "darken-bottom",
+        "video-url": "",
+        "overline": "Overline text",
+        "heading": "Video",
+        "description": "<p>Add a description here</p>",
+        "button-text": "Button",
+        "button-url": "",
+        "mobile-video-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center",
+        "mobile-hide-description": false
+      }
+    },
+    "9122b6fc-3d6e-4f6b-8054-88ddcb8687a7": {
+      "type": "grid-with-overlay",
+      "blocks": {
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-0": {
+          "type": "image",
+          "settings": {
+            "x-blocks": "2",
+            "y-blocks": "2",
+            "title": "Best Sellers of all time",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        },
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-1": {
+          "type": "image",
+          "settings": {
+            "x-blocks": "1",
+            "y-blocks": "1",
+            "title": "Just Released",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        },
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-2": {
+          "type": "image",
+          "settings": {
+            "x-blocks": "1",
+            "y-blocks": "1",
+            "title": "On Sale",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        }
+      },
+      "block_order": [
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-0",
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-1",
+        "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-2"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "heading-white-text": false,
+        "container-width": "4",
+        "spacing": true,
+        "width": 3,
+        "white-text": true,
+        "text-style": "light-with-darken",
+        "heading-type": "block-heading",
+        "overlay-style": "darken-bottom",
+        "overline": "",
+        "heading": "",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-width": "2",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134
+      }
+    },
+    "c2ba49d2-bed2-49dc-99ea-8c0f5139cc92": {
+      "type": "collapsible-rows",
+      "blocks": {
+        "template--14865991663697__c2ba49d2-bed2-49dc-99ea-8c0f5139cc92-1686867110a7a3b19d-0": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Collapsible row",
+            "description": "<p>Use rows to highlight unique features, <br/>sizing information, <br/>or other sales information.</p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "template--14865991663697__c2ba49d2-bed2-49dc-99ea-8c0f5139cc92-1686867110a7a3b19d-1": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Collapsible row",
+            "description": "<p>Use rows to highlight unique features, <br/>sizing information, <br/>or other sales information.</p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "template--14865991663697__c2ba49d2-bed2-49dc-99ea-8c0f5139cc92-1686867110a7a3b19d-2": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "Collapsible row",
+            "description": "<p>Use rows to highlight unique features, <br/>sizing information, <br/>or other sales information.</p>",
+            "page-content": "",
+            "default-open": false
+          }
+        }
+      },
+      "block_order": [
+        "template--14865991663697__c2ba49d2-bed2-49dc-99ea-8c0f5139cc92-1686867110a7a3b19d-0",
+        "template--14865991663697__c2ba49d2-bed2-49dc-99ea-8c0f5139cc92-1686867110a7a3b19d-1",
+        "template--14865991663697__c2ba49d2-bed2-49dc-99ea-8c0f5139cc92-1686867110a7a3b19d-2"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "light",
+        "white-text": false,
+        "container-width": "1",
+        "heading": "Frequently Asked Questions",
+        "heading-alignment": "center"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "white-text": false,
+        "container-width": "4",
+        "title": "You may also like"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "4e9385a7-14ff-4617-8542-ed651a7ec51f",
+    "edb6b679-1b0d-4698-be1b-efe7bb590de9",
+    "5041891c-740e-40b2-a00d-936d32f31a4c",
+    "9122b6fc-3d6e-4f6b-8054-88ddcb8687a7",
+    "c2ba49d2-bed2-49dc-99ea-8c0f5139cc92",
+    "related-products"
+  ]
+}

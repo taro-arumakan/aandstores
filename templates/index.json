@@ -1,0 +1,216 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-0": {
+          "type": "image",
+          "settings": {
+            "text-width": "small",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/aand.jpg",
+            "overline": "",
+            "title": "",
+            "highlight-type": "italic",
+            "highlight-color": "#ffdd66",
+            "highlight-text": "#000000",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "text-width": "small",
+            "text-horizontal-alignment": "left",
+            "text-vertical-alignment": "bottom",
+            "image": "shopify://shop_images/230817_HIBROW_3677_final.jpg",
+            "overline": "",
+            "title": "",
+            "highlight-type": "italic",
+            "highlight-color": "#ffdd66",
+            "highlight-text": "#000000",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        },
+        "slide-2": {
+          "type": "image",
+          "settings": {
+            "text-width": "small",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "bottom",
+            "image": "shopify://shop_images/FullSizeRender_4.jpg",
+            "overline": "",
+            "title": "",
+            "highlight-type": "italic",
+            "highlight-color": "#ffdd66",
+            "highlight-text": "#000000",
+            "description": "",
+            "link-url": "/",
+            "link-text": "",
+            "mobile-text-alignment": "center",
+            "mobile-hide-description": false
+          }
+        }
+      },
+      "block_order": [
+        "slide-0",
+        "slide-1",
+        "slide-2"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "spacing-around-blocks": false,
+        "arrows-enabled": false,
+        "blocks_per_slide": 1,
+        "background-color": "none",
+        "white-text": true,
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "heading-type": "featured-heading",
+        "image-display-type": "fit-screen",
+        "aspect-ratio": 56,
+        "overlay-style": "none",
+        "auto-rotate": true,
+        "rotate-frequency": 4,
+        "transition_type": "fade",
+        "mobile-image-display-type": "aspect-ratio",
+        "mobile-aspect-ratio": 200,
+        "blocks_per_slide_mobile": "1",
+        "mobile-overlay": true
+      }
+    },
+    "custom_content_zprGrU": {
+      "type": "custom-content",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "white-text": false,
+        "text-alignment": "center",
+        "container-width": "6",
+        "custom_html": "<div><h1>BRAND</h1></div>"
+      }
+    },
+    "image_with_text_7K63Wt": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "white-text": true,
+        "overlap": false,
+        "heading-type": "section-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "none",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/HIBROW_d499043f-dbda-4802-9a81-59f3b3c86846.jpg",
+        "overline": "",
+        "title": "",
+        "highlight-type": "italic",
+        "highlight-color": "#ffdd66",
+        "highlight-text": "#000000",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
+    "image_with_text_DwJCPd": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "white-text": true,
+        "overlap": false,
+        "heading-type": "section-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/2000x1334_01.jpg",
+        "overline": "Coming Soon",
+        "title": "",
+        "highlight-type": "italic",
+        "highlight-color": "#ffdd66",
+        "highlight-text": "#000000",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
+    "featured_collection_MBXmKK": {
+      "type": "featured-collection",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "image-enabled": false,
+        "description-enabled": false,
+        "background-color": "none",
+        "white-text": false,
+        "section-alignment": "center",
+        "display-type": "grid",
+        "products-per-row--desktop": "4",
+        "collection": "all-1",
+        "max-products": 6,
+        "heading": "NEW",
+        "products-per-row--mobile": "2"
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "custom_content_zprGrU",
+    "image_with_text_7K63Wt",
+    "image_with_text_DwJCPd",
+    "featured_collection_MBXmKK"
+  ]
+}
