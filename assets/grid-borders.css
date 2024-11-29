@@ -1,0 +1,133 @@
+.layout--main-content {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+
+.layout-main-content-bordered {
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+}
+
+.shopify-section::after {
+  content: "";
+  display: block;
+  width: calc(100vw + 1.2rem);
+  height: 1px;
+  background-color: #e0e0e0;
+  position: absolute;
+  left: -1.2rem;
+  z-index: 100;
+}
+.featured-collection--root {
+  padding-left: 0;
+  padding-right: 0;
+}
+.featured-collection--products {
+  position:relative;
+  grid-gap: 0;
+}
+.featured-collection--products::before {
+  content: "";
+    display: block;
+    width: calc(100vw + 1.2rem);
+    height: 1px;
+    background-color: #e0e0e0;
+    position: absolute;
+    left: -1.2rem;
+    z-index: 100;
+}
+
+.featured-collection--products::after {
+  content: "";
+  display: block;
+  width: calc(100vw + 1.2rem);
+  height: 1px;
+  background-color: #e0e0e0;
+  position: absolute;
+  bottom: 0;
+  left: -1.2rem;
+  z-index: 100;
+}
+
+.product-card--root img {
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+.product-card--root {
+  position: relative;
+  min-height: 100%;
+}
+/* .product-card--root::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+} */
+/* .product-card--root::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #e0e0e0;
+  position: absolute;
+  right: 0;
+  z-index: 100;
+}
+.product-card--image-wrapper::after {
+  content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e0e0e0;
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+} */
+
+/* .product-card--details {
+  outline: 1px solid #e0e0e0;
+  margin-top: unset;
+  margin-bottom: unset;
+}
+.product-card--image-wrapper {
+  outline: 1px solid #e0e0e0;
+} */
+
+/* .product-card--root {
+  outline: 1px solid #e0e0e0;
+  gap: unset;
+} */
+
+product-card .product-card--details {
+  gap: unset;
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  font-size: var(--font--paragraph--size);
+  letter-spacing: -1px;
+}
+
+[data-item=block-link]>*,
+[data-item=overline], [data-item=nav-text] {
+  font-size: var(--font--paragraph--size);
+  letter-spacing: -0.2px;
+}
+
+@media only screen and (max-width:767px) {
+  [data-item=block-link]>*,
+  [data-item=overline], [data-item=nav-text] {
+    font-size: var(--font--paragraph--mobile-size);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1028px) {
+  [data-container=panel][data-columns="4"] {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
