@@ -184,7 +184,7 @@
       "settings": {
         "layout": "left-center",
         "background-color": "none",
-        "bottom-border": true,
+        "bottom-border": false,
         "white-text": false,
         "hover-disabled": false,
         "sticky-enabled": true,
