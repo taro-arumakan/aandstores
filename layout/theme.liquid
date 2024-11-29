@@ -81,8 +81,8 @@
           <main class="layout--template" id="main_content">
             {{ content_for_layout }}
           </main>
+          {%- sections 'footer-group' -%}
         </div>
-        {%- sections 'footer-group' -%}
       </div>
 
       {%- liquid
