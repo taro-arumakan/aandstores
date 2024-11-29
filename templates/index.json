@@ -105,6 +105,10 @@
     },
     "custom_content_zprGrU": {
       "type": "custom-content",
+      "custom_css": [
+        "h1 {font-size: var(--font--section--size);}",
+        "@media only screen and (max-width: 767px) {h1 {font-size: var(--font--section--mobile-size); }}"
+      ],
       "settings": {
         "top-border": false,
         "spacing-above": true,
@@ -156,7 +160,7 @@
     "image_with_text_DwJCPd": {
       "type": "image-with-text",
       "custom_css": [
-        "[data-item=overline] {padding-top: 70%;}"
+        "[data-item=\"overline\"] {padding-top: 70%;}"
       ],
       "settings": {
         "top-border": false,
