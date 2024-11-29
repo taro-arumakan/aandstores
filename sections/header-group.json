@@ -101,7 +101,7 @@
         "announcement_hq8R4N"
       ],
       "settings": {
-        "sticky-enabled": false,
+        "sticky-enabled": true,
         "top-border": false,
         "background-color": "none",
         "white-text": false,

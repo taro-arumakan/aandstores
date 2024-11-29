@@ -9,7 +9,7 @@
   border-right: 1px solid #e0e0e0;
 }
 
-.shopify-section:not(.shopify-section-group-footer-group)::after {
+.shopify-section:not(.shopify-section-group-footer-group, .shopify-section-group-overlay-group)::after {
   content: "";
   display: block;
   width: 100vw;
@@ -17,11 +17,11 @@
   background-color: #e0e0e0;
   position: absolute;
   left: -1.2rem;
-  z-index: 100;
+  z-index: 1;
 }
 
-.shopify-section.section--announcement-bar::after {
-  width: calc(100vw + 1.2rem);
+.shopify-section:has(.header--root[aria-hidden="true"])::after {
+  opacity: 0;
 }
 
 /* featured collection */
@@ -38,24 +38,24 @@
 .featured-collection--products::before {
   content: "";
   display: block;
-  width: calc(100vw + 1.2rem);
+  width: 100vw;
   height: 1px;
   background-color: #e0e0e0;
   position: absolute;
   left: -1.2rem;
-  z-index: 100;
+  z-index: 1;
 }
 
 .featured-collection--products::after {
   content: "";
   display: block;
-  width: calc(100vw + 1.2rem);
+  width: 100vw;
   height: 1px;
   background-color: #e0e0e0;
   position: absolute;
   bottom: 0;
   left: -1.2rem;
-  z-index: 100;
+  z-index: 1;
 }
 
 .product-card--root img {
@@ -86,7 +86,7 @@
   background-color: #e0e0e0;
   position: absolute;
   right: 0;
-  z-index: 100;
+  z-index: 1;
 }
 
 .product-card--image-wrapper::after {
@@ -97,7 +97,7 @@
   background-color: #e0e0e0;
   position: absolute;
   bottom: 0;
-  z-index: 100;
+  z-index: 1;
 }
 
 @media only screen and (max-width:767px) {
@@ -220,7 +220,7 @@ product-card .product-card--details {
   background-color: #e0e0e0;
   position: absolute;
   left: -1.2rem;
-  z-index: 100;
+  z-index: 1;
 }
 
 .article-card--root::after {
@@ -241,7 +241,7 @@ product-card .product-card--details {
   background-color: #e0e0e0;
   position: absolute;
   right: 0;
-  z-index: 100;
+  z-index: 1;
 }
 
 .article-card--image-wrapper::after {
@@ -252,7 +252,7 @@ product-card .product-card--details {
   background-color: #e0e0e0;
   position: absolute;
   bottom: 0;
-  z-index: 100;
+  z-index: 1;
 }
 
 @media only screen and (max-width:767px) {
