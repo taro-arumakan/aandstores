@@ -14,11 +14,11 @@
       "settings": {
         "show-title": true,
         "heading-type": "featured-heading",
-        "heading-alignment": "center",
-        "show-description": true,
+        "heading-alignment": "left",
+        "show-description": false,
         "description-alignment": "with-title",
-        "white-text": true,
-        "show-image": true,
+        "white-text": false,
+        "show-image": false,
         "use-image-fallback": true,
         "image-display-type": "small",
         "aspect-ratio": 56,
@@ -31,6 +31,7 @@
     },
     "header-promo": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
@@ -52,6 +53,9 @@
         "parallax-enabled": false,
         "overline": "Overline text",
         "title": "Collection Promotion",
+        "highlight-type": "italic",
+        "highlight-color": "#ffdd66",
+        "highlight-text": "#000000",
         "description": "<p>A collection-wide promotion for sales, product announcements and more.</p>",
         "link-url": "",
         "link-text": "",
@@ -64,6 +68,7 @@
     },
     "navigation": {
       "type": "collection-navigation",
+      "disabled": true,
       "settings": {
         "show-browse-button": true,
         "show-sort-button": true,
@@ -73,6 +78,7 @@
         "custom-list-collections": "",
         "show-sort-list": true,
         "show-refine-list": true,
+        "swatches": "circle",
         "show-search-link": true
       }
     },
@@ -84,7 +90,7 @@
           "settings": {
             "row-number": 2,
             "column-number": 2,
-            "promo-width": "2",
+            "promo-width": "full",
             "heading-type": "section-heading",
             "text-horizontal-alignment": "center",
             "text-vertical-alignment": "center",
@@ -95,8 +101,12 @@
             "overlay-style": "darken-bottom",
             "parallax-enabled": false,
             "white-text": true,
+            "image": "shopify://shop_images/FullSizeRender_4.jpg",
             "overline": "Overline text",
             "title": "Grid promotion",
+            "highlight-type": "italic",
+            "highlight-color": "#ffdd66",
+            "highlight-text": "#000000",
             "description": "<p>Create eye-catching promos within collection grids to increase discoverability and accelerate conversions.</p>",
             "link-url": "",
             "link-text": "Optional link",
@@ -110,7 +120,7 @@
       ],
       "settings": {
         "products-per-row--desktop": 4,
-        "products-per-row--mobile": "1",
+        "products-per-row--mobile": "2",
         "number-of-rows": 4
       }
     },
@@ -128,6 +138,7 @@
     },
     "footer-promo": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": false,
@@ -149,6 +160,9 @@
         "parallax-enabled": false,
         "overline": "Overline text",
         "title": "Collection Promotion",
+        "highlight-type": "italic",
+        "highlight-color": "#ffdd66",
+        "highlight-text": "#000000",
         "description": "<p>A collection-wide promotion for sales, product announcements and more.</p>",
         "link-url": "",
         "link-text": "",
