@@ -35,6 +35,7 @@
     -%}
 
     {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'grid-borders.css' | asset_url | stylesheet_tag: preload: true }}
     {{ content_for_header }}
     {%- render 'routes' -%}
 
@@ -73,13 +74,14 @@
 
     <div class="layout--viewport" data-drawer-status="closed">
       <div class="layout--main-content">
-        {%- sections 'header-group' -%}
-        {%- sections 'overlay-group' -%}
+        <div class="layout-main-content-bordered">
+          {%- sections 'header-group' -%}
+          {%- sections 'overlay-group' -%}
 
-        <main class="layout--template" id="main_content">
-          {{ content_for_layout }}
-        </main>
-
+          <main class="layout--template" id="main_content">
+            {{ content_for_layout }}
+          </main>
+        </div>
         {%- sections 'footer-group' -%}
       </div>
 
