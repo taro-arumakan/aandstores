@@ -498,11 +498,11 @@ body {
   min-height: 100vh;
   width: 100%;
   top: 0;
-  position: relative
+  position: relative;
 }
 
 .layout--template {
-  position: relative
+  position: relative;
 }
 
 .layout--close {
@@ -1983,9 +1983,9 @@ input[type=submit]:visited {
   transition: opacity .2s var(--transition--standard), transform .2s var(--transition--standard), background-color .2s var(--transition--standard), color .2s var(--transition--standard), box-shadow .2s var(--transition--standard)
 }
 
-.header--root[data-sticky=true][aria-hidden=false] {
+/* .header--root[data-sticky=true][aria-hidden=false] {
   box-shadow: 0 10px 10px -10px #0003
-}
+} */
 
 .layout--main-content:has(.section--header~.section--announcement-bar>.announcement--root[data-sticky=true]) .header--root {
   box-shadow: none
@@ -3725,8 +3725,8 @@ body:not(:has(.shopify-section:first-child>[data-transparent-header-compatible])
 
 @container (max-width:768px) {
   .carousel--dot>svg circle:first-child {
-    fill: #0003;
-    stroke: #0003
+    fill: #e3e3e3;
+    stroke: #e3e3e3;
   }
 
   [data-background-color=dark] .carousel--dot>svg circle:first-child {
