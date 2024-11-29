@@ -11,48 +11,23 @@
   "type": "footer",
   "name": "Footer Group",
   "sections": {
-    "scrolling_content_wRcQAD": {
-      "type": "scrolling-content",
-      "blocks": {
-        "image_ftJPfV": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/logo.png",
-            "image-height": 100,
-            "link": "",
-            "hide-on-desktop": false,
-            "mobile-image-height": 70,
-            "hide-on-mobile": false
-          }
-        },
-        "image_79YTDd": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/PZG_02.png",
-            "image-height": 100,
-            "link": "",
-            "hide-on-desktop": false,
-            "mobile-image-height": 70,
-            "hide-on-mobile": false
-          }
-        }
-      },
-      "block_order": [
-        "image_ftJPfV",
-        "image_79YTDd"
+    "custom_content_EGYi9q": {
+      "type": "custom-content",
+      "custom_css": [
+        ".custom-logo__wrapper {max-width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: row; margin-top: 3rem; margin-bottom: 3rem;}",
+        "img {max-width: 100%; height: auto; border-style: none; vertical-align: center;}",
+        ".custom-logo__link:first-of-type {margin-right: 64px; margin-bottom: 0;}",
+        ".custom-logo__link {max-width: 100px;}"
       ],
       "settings": {
         "top-border": false,
         "spacing-above": false,
         "spacing-below": false,
         "background-color": "none",
-        "parallax-enabled": false,
-        "overlay-style": "darken-bottom",
         "white-text": false,
-        "text-size": "section-heading",
-        "animation-direction": "left",
-        "animation-speed": 2,
-        "pause-on-hover": false
+        "text-alignment": "center",
+        "container-width": "1",
+        "custom_html": "<div class=\"custom-logo__wrapper\">\n          <a href=\"/pages/hibrow\" class=\"custom-logo__link\">\n            <img src=\"//aandstores.com/cdn/shop/files/logo.png?v=1675847388\" alt=\"\">\n          </a>\n          <a href=\"/pages/hellos\" class=\"custom-logo__link\">\n            <img src=\"//aandstores.com/cdn/shop/files/PZG_02.png?v=1732588253\" alt=\"\">\n          </a>\n        </div>"
       }
     },
     "footer": {
@@ -102,7 +77,7 @@
     }
   },
   "order": [
-    "scrolling_content_wRcQAD",
+    "custom_content_EGYi9q",
     "footer"
   ]
 }
