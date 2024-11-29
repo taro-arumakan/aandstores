@@ -391,7 +391,7 @@
         {%- endcapture %}
 
         <div class="blog--body">
-          <masonry-grid-element
+          <div
             class="blog--article-list"
             data-gap="32"
             {% unless settings.transitions--other %}
@@ -412,7 +412,7 @@
                 render 'article-card', featured_article: article, show_author: show_author, show_cta: show_cta, show_date: show_date, show_excerpt: show_excerpt, type: 'full_article', transition_name: section.id, sizes: sizes
               endfor
             -%}
-          </masonry-grid-element>
+          </div>
 
           {%- if paginate.pages > 1 or show_rss -%}
             <div class="blog--footer">

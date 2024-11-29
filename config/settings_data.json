@@ -35,7 +35,7 @@
     "content--box-translucent": true,
     "buttons--style": "secondary-button",
     "buttons--radius": 2,
-    "image--radius": 4,
+    "image--radius": 0,
     "image--product-size": "natural",
     "image--collection-size": "square",
     "image--article-size": "natural",
