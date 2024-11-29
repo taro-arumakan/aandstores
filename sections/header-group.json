@@ -196,7 +196,7 @@
         "mobile-logo-height": 30,
         "transparent-enabled": true,
         "transparent-white-text": false,
-        "menu": "link-list",
+        "menu": "sidebar-menu",
         "search-enabled": true,
         "icons-enabled": true,
         "highlight-item": "Sale",
