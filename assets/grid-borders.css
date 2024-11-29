@@ -23,7 +23,7 @@
   left: -1.2rem;
   z-index: 3;
 }
-.shopify-section.section--header::after {
+.shopify-section.section--header:not(:has(.x-menu--level-2--container[aria-hidden="false"]))::after {
   z-index: 4;
 }
 
@@ -128,8 +128,8 @@
 product-card .product-card--details {
   gap: unset;
   flex: 1;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 
   font-size: var(--font--paragraph--size);
   letter-spacing: -1px;
