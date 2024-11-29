@@ -9,40 +9,20 @@
  */
 {
   "sections": {
-    "collection-header": {
-      "type": "collection-header",
-      "custom_css": [
-        "img {object-fit: contain; max-width: 200px; margin-top: 30px; margin: auto;}",
-        "@media only screen and (max-width: 767px) {.image--root {--image--height: 180px; } img {max-width: 100px; margin-top: 20px; }}"
-      ],
-      "settings": {
-        "show-title": true,
-        "heading-type": "featured-heading",
-        "heading-alignment": "left",
-        "show-description": false,
-        "description-alignment": "with-title",
-        "white-text": false,
-        "show-image": true,
-        "use-image-fallback": true,
-        "image-display-type": "small",
-        "aspect-ratio": 56,
-        "mobile-image-display-type": "medium",
-        "mobile-aspect-ratio": 134,
-        "text-style": "none",
-        "overlay-style": "none",
-        "parallax-enabled": false
-      }
-    },
     "header-promo": {
       "type": "image-with-text",
-      "disabled": true,
+      "custom_css": [
+        ".featured-content--container {justify-content: center; align-items: center;}",
+        ".image--root {height: 100px; max-width: 200px;}",
+        "img {object-fit: contain; max-height: 100px;}"
+      ],
       "settings": {
         "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "light",
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
         "container-width": "5",
-        "white-text": true,
+        "white-text": false,
         "overlap": false,
         "heading-type": "featured-heading",
         "text-position": "overlay",
@@ -53,21 +33,43 @@
         "text-background-color": "transparent",
         "image-display-type": "x-small",
         "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
+        "overlay-style": "none",
         "parallax-enabled": false,
-        "overline": "Overline text",
-        "title": "Collection Promotion",
+        "image": "shopify://shop_images/PZG_02.png",
+        "overline": "",
+        "title": "",
         "highlight-type": "italic",
         "highlight-color": "#ffdd66",
         "highlight-text": "#000000",
-        "description": "<p>A collection-wide promotion for sales, product announcements and more.</p>",
-        "link-url": "",
+        "description": "",
+        "link-url": "shopify://collections/photozeniagoods",
         "link-text": "",
-        "mobile-overlay": true,
+        "mobile-overlay": false,
         "mobile-hide-description": false,
         "mobile-image-display-type": "original",
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center"
+      }
+    },
+    "collection-header": {
+      "type": "collection-header",
+      "disabled": true,
+      "settings": {
+        "show-title": true,
+        "heading-type": "featured-heading",
+        "heading-alignment": "left",
+        "show-description": false,
+        "description-alignment": "with-title",
+        "white-text": false,
+        "show-image": false,
+        "use-image-fallback": true,
+        "image-display-type": "small",
+        "aspect-ratio": 56,
+        "mobile-image-display-type": "medium",
+        "mobile-aspect-ratio": 134,
+        "text-style": "none",
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false
       }
     },
     "navigation": {
@@ -86,8 +88,46 @@
         "show-search-link": true
       }
     },
+    "footer-promo": {
+      "type": "image-with-text",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "6",
+        "white-text": true,
+        "overlap": true,
+        "heading-type": "block-heading",
+        "text-position": "bottom",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
+        "overlay-style": "darken-bottom",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/2000x1334_01.jpg",
+        "overline": "COMING SOON",
+        "title": "",
+        "highlight-type": "italic",
+        "highlight-color": "#ffdd66",
+        "highlight-text": "#000000",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
     "main": {
       "type": "main-collection",
+      "disabled": true,
       "custom_css": [
         ".collection-promo--root {min-height: 350px;}"
       ],
@@ -108,51 +148,14 @@
         "heading-alignment": "center",
         "heading": "Recently viewed"
       }
-    },
-    "footer-promo": {
-      "type": "image-with-text",
-      "disabled": true,
-      "settings": {
-        "top-border": false,
-        "spacing-above": false,
-        "spacing-below": false,
-        "background-color": "none",
-        "container-width": "6",
-        "white-text": true,
-        "overlap": false,
-        "heading-type": "featured-heading",
-        "text-position": "overlay",
-        "text-horizontal-alignment": "center",
-        "text-vertical-alignment": "center",
-        "text-width": "medium",
-        "text-style": "none",
-        "text-background-color": "transparent",
-        "image-display-type": "medium",
-        "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
-        "parallax-enabled": false,
-        "overline": "Overline text",
-        "title": "Collection Promotion",
-        "highlight-type": "italic",
-        "highlight-color": "#ffdd66",
-        "highlight-text": "#000000",
-        "description": "<p>A collection-wide promotion for sales, product announcements and more.</p>",
-        "link-url": "",
-        "link-text": "",
-        "mobile-overlay": true,
-        "mobile-hide-description": false,
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "mobile-text-alignment": "center"
-      }
     }
   },
   "order": [
-    "collection-header",
     "header-promo",
+    "collection-header",
     "navigation",
+    "footer-promo",
     "main",
-    "recent-products",
-    "footer-promo"
+    "recent-products"
   ]
 }

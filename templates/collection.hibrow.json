@@ -9,6 +9,50 @@
  */
 {
   "sections": {
+    "header-promo": {
+      "type": "image-with-text",
+      "disabled": true,
+      "custom_css": [
+        ".featured-content--container {justify-content: center; align-items: center; height: 300px;}",
+        ".image--root {max-width: 200px; --image--height: 300px;}",
+        "img {object-fit: contain;}",
+        "@media only screen and (max-width: 767px) {.featured-content--container {height: 150px; } .image--root {max-width: 120px; }}"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "5",
+        "white-text": false,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "x-small",
+        "aspect-ratio": 56,
+        "overlay-style": "none",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/hibrow-logo_2x_dab49fca-e9c4-4188-92fc-92b361920aff.png",
+        "overline": "",
+        "title": "",
+        "highlight-type": "italic",
+        "highlight-color": "#ffdd66",
+        "highlight-text": "#000000",
+        "description": "",
+        "link-url": "shopify://collections/hibrow",
+        "link-text": "",
+        "mobile-overlay": false,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
+      }
+    },
     "collection-header": {
       "type": "collection-header",
       "custom_css": [
@@ -33,43 +77,6 @@
         "parallax-enabled": false
       }
     },
-    "header-promo": {
-      "type": "image-with-text",
-      "disabled": true,
-      "settings": {
-        "top-border": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "background-color": "light",
-        "container-width": "5",
-        "white-text": true,
-        "overlap": false,
-        "heading-type": "featured-heading",
-        "text-position": "overlay",
-        "text-horizontal-alignment": "center",
-        "text-vertical-alignment": "center",
-        "text-width": "medium",
-        "text-style": "none",
-        "text-background-color": "transparent",
-        "image-display-type": "x-small",
-        "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
-        "parallax-enabled": false,
-        "overline": "Overline text",
-        "title": "Collection Promotion",
-        "highlight-type": "italic",
-        "highlight-color": "#ffdd66",
-        "highlight-text": "#000000",
-        "description": "<p>A collection-wide promotion for sales, product announcements and more.</p>",
-        "link-url": "",
-        "link-text": "",
-        "mobile-overlay": true,
-        "mobile-hide-description": false,
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
-        "mobile-text-alignment": "center"
-      }
-    },
     "navigation": {
       "type": "collection-navigation",
       "disabled": true,
@@ -88,6 +95,40 @@
     },
     "main": {
       "type": "main-collection",
+      "blocks": {
+        "grid-promo-1": {
+          "type": "promotion",
+          "settings": {
+            "row-number": 2,
+            "column-number": 2,
+            "promo-width": "full",
+            "heading-type": "section-heading",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "text-width": "medium",
+            "text-style": "none",
+            "background-color": "none",
+            "text-background-color": "transparent",
+            "overlay-style": "darken-bottom",
+            "parallax-enabled": false,
+            "white-text": true,
+            "image": "shopify://shop_images/FullSizeRender_4.jpg",
+            "overline": "FLIP BOXの様々な活用事例をご紹介",
+            "title": "FLIP BOX GALLERY",
+            "highlight-type": "italic",
+            "highlight-color": "#ffdd66",
+            "highlight-text": "#000000",
+            "description": "",
+            "link-url": "shopify://blogs/flip-box-gallery",
+            "link-text": "Gallery",
+            "mobile-hide-description": false,
+            "mobile-text-alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "grid-promo-1"
+      ],
       "custom_css": [
         ".collection-promo--root {min-height: 350px;}"
       ],
@@ -148,8 +189,8 @@
     }
   },
   "order": [
-    "collection-header",
     "header-promo",
+    "collection-header",
     "navigation",
     "main",
     "recent-products",
