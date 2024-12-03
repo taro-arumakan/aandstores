@@ -21,6 +21,19 @@
           "disabled": true,
           "settings": {}
         },
+        "description": {
+          "type": "description",
+          "settings": {
+            "collapsible-row-enabled": false,
+            "heading": "Description"
+          }
+        },
+        "liquid_thJRfd": {
+          "type": "liquid",
+          "settings": {
+            "custom-liquid": "{% if product.metafields.custom.material != blank %}\n              <dl class=\"product-meta\"><dt>MATERIAL</dt><dd>{{ product.metafields.custom.material }}</dd></dl>\n              {% endif %}\n              {% if product.metafields.custom.size != blank %}\n              <dl class=\"product-meta\"><dt>SIZE</dt><dd>{{ product.metafields.custom.size }}</dd></dl>\n              {% endif %}\n              {% if product.metafields.custom.weight != blank %}\n              <dl class=\"product-meta\"><dt>WEIGHT</dt><dd>{{ product.metafields.custom.weight }}</dd></dl>\n              {% endif %}"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -35,6 +48,10 @@
             "size-chart-content": ""
           }
         },
+        "quantity_selector_TdFT7t": {
+          "type": "quantity-selector",
+          "settings": {}
+        },
         "buy-buttons": {
           "type": "buy-buttons",
           "settings": {
@@ -44,13 +61,6 @@
         "pickup": {
           "type": "pickup",
           "settings": {}
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-            "collapsible-row-enabled": false,
-            "heading": "Description"
-          }
         },
         "complementary-products": {
           "type": "complementary-products",
@@ -74,11 +84,13 @@
       "block_order": [
         "heading",
         "vendor",
+        "description",
+        "liquid_thJRfd",
         "price",
         "options",
+        "quantity_selector_TdFT7t",
         "buy-buttons",
         "pickup",
-        "description",
         "complementary-products",
         "social-sharing"
       ],
