@@ -76,7 +76,7 @@
         "slide-2"
       ],
       "custom_css": [
-        ".carousel--dot-container {padding: 10px 0 10px;}",
+        "@media only screen and (max-width: 767px) {.carousel--dot-container {padding: 10px 0 10px;}}",
         ".carousel--dot {--stroke: 2px;}"
       ],
       "settings": {
@@ -148,7 +148,7 @@
         "highlight-color": "#ffdd66",
         "highlight-text": "#000000",
         "description": "",
-        "link-url": "",
+        "link-url": "shopify://collections/hibrow",
         "link-text": "",
         "mobile-overlay": true,
         "mobile-hide-description": false,
