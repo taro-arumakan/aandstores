@@ -18,6 +18,7 @@
         },
         "vendor": {
           "type": "vendor",
+          "disabled": true,
           "settings": {}
         },
         "price": {
@@ -28,6 +29,7 @@
           "type": "options",
           "settings": {
             "variant-style": "dropdowns",
+            "swatches": "circle",
             "size-chart-enabled": true,
             "size-chart-option": "size",
             "size-chart-content": ""
@@ -84,25 +86,26 @@
         "container-width": "4",
         "spacing-above": true,
         "spacing-below": true,
-        "media-layout": "thumbnails",
+        "media-layout": "mixed",
         "text-column-width": 30,
-        "media-gap": 8,
+        "media-gap": 0,
         "column-spacing": "close",
         "text-alignment": "left",
         "thumbnail-width": 80,
         "heading-enabled": false,
         "heading-sizes-enabled": true,
         "heading-size": 40,
-        "breadcrumbs-enabled": true,
+        "breadcrumbs-enabled": false,
         "modal-enabled": true,
         "variant-scroll-enabled": true,
         "image-zoom-enabled": true,
         "loop-enabled": false,
-        "mobile-media-layout": "slideshow"
+        "mobile-media-layout": "thumbnails"
       }
     },
     "4e9385a7-14ff-4617-8542-ed651a7ec51f": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": false,
@@ -124,6 +127,9 @@
         "parallax-enabled": false,
         "overline": "",
         "title": "Image with text",
+        "highlight-type": "italic",
+        "highlight-color": "#ffdd66",
+        "highlight-text": "#000000",
         "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.</p>",
         "link-url": "",
         "link-text": "",
@@ -136,12 +142,16 @@
     },
     "edb6b679-1b0d-4698-be1b-efe7bb590de9": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
         "spacing-below": true,
+        "image-enabled": false,
+        "description-enabled": false,
         "background-color": "none",
         "white-text": false,
+        "section-alignment": "center",
         "display-type": "slideshow",
         "products-per-row--desktop": "3",
         "collection": "",
@@ -152,6 +162,7 @@
     },
     "5041891c-740e-40b2-a00d-936d32f31a4c": {
       "type": "featured-video",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": false,
@@ -173,6 +184,9 @@
         "video-url": "",
         "overline": "Overline text",
         "heading": "Video",
+        "highlight-type": "italic",
+        "highlight-color": "#ffdd66",
+        "highlight-text": "#000000",
         "description": "<p>Add a description here</p>",
         "button-text": "Button",
         "button-url": "",
@@ -190,9 +204,13 @@
           "settings": {
             "x-blocks": "2",
             "y-blocks": "2",
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
             "title": "Best Sellers of all time",
             "link-url": "",
-            "link-text": "View more"
+            "link-text": "View more",
+            "mobile-text-alignment": "center"
           }
         },
         "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-1": {
@@ -200,9 +218,13 @@
           "settings": {
             "x-blocks": "1",
             "y-blocks": "1",
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
             "title": "Just Released",
             "link-url": "",
-            "link-text": "View more"
+            "link-text": "View more",
+            "mobile-text-alignment": "center"
           }
         },
         "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-2": {
@@ -210,9 +232,13 @@
           "settings": {
             "x-blocks": "1",
             "y-blocks": "1",
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
             "title": "On Sale",
             "link-url": "",
-            "link-text": "View more"
+            "link-text": "View more",
+            "mobile-text-alignment": "center"
           }
         }
       },
@@ -221,15 +247,18 @@
         "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-1",
         "template--14865991663697__9122b6fc-3d6e-4f6b-8054-88ddcb8687a7-1686867247cebb65d1-2"
       ],
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
         "spacing-below": true,
         "background-color": "none",
         "heading-white-text": false,
+        "section-alignment": "center",
         "container-width": "4",
         "spacing": true,
         "width": 3,
+        "row-height": 250,
         "white-text": true,
         "text-style": "light-with-darken",
         "heading-type": "block-heading",
@@ -280,6 +309,7 @@
         "template--14865991663697__c2ba49d2-bed2-49dc-99ea-8c0f5139cc92-1686867110a7a3b19d-1",
         "template--14865991663697__c2ba49d2-bed2-49dc-99ea-8c0f5139cc92-1686867110a7a3b19d-2"
       ],
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,

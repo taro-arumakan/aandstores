@@ -182,7 +182,7 @@
         "blog"
       ],
       "settings": {
-        "layout": "left-center",
+        "layout": "left-left",
         "background-color": "none",
         "bottom-border": false,
         "white-text": false,
