@@ -15,14 +15,38 @@
   endif
 -%}
 
+{%- if block %}
+  {%- case block -%}
+    {%- when 'heading' -%}
+      <div
+        {% unless settings['transitions--text'] %}
+          data-transition-item="viewport"
+          data-transition-type="slide-in"
+        {% endunless %}
+      >
+        <h2 class="product--block--heading" data-item="section-heading">
+          {%- unless request.page_type == 'product' or onboarding -%}
+            <a href="{{ product.url }}">
+          {%- endunless -%}
+
+          {{- title -}}
+
+          {%- unless request.page_type == 'product' or onboarding -%}
+            </a>
+          {%- endunless -%}
+        </h2>
+      </div>
+  {%- endcase -%}
+{% endif %}
+
 {%- for block in section.blocks -%}
   {%- liquid
     assign fit_together = false
     if block.type == 'collapsible-row'
       assign fit_together = true
-    elsif block.type == 'complementary-products' and block.settings.collapsible-row-enabled
+    elsif block.type == 'complementary-products' and block.settings['collapsible-row-enabled']
       assign fit_together = true
-    elsif block.type == 'description' and block.settings.collapsible-row-enabled
+    elsif block.type == 'description' and block.settings['collapsible-row-enabled']
       assign fit_together = true
     endif
   -%}
@@ -45,9 +69,9 @@
           -%}
         </div>
 
-      {%- when 'heading' -%}
+      {% comment %} {%- when 'heading' -%}
         <div
-          {% unless settings.transitions--text %}
+          {% unless settings['transitions--text'] %}
             data-transition-item="viewport"
             data-transition-type="slide-in"
           {% endunless %}
@@ -63,7 +87,7 @@
               </a>
             {%- endunless -%}
           </h2>
-        </div>
+        </div> {% endcomment %}
 
       {%- when 'label' -%}
         {%- liquid
@@ -71,9 +95,9 @@
           assign sale_t = 'products.sale' | t
           assign out_of_stock_t = 'products.out_of_stock' | t
 
-          assign sold_out_enabled = block.settings.sold-out-enabled
-          assign sale_enabled = block.settings.sale-enabled
-          assign sale_type = block.settings.sale-type
+          assign sold_out_enabled = block.settings['sold-out-enabled']
+          assign sale_enabled = block.settings['sale-enabled']
+          assign sale_type = block.settings['sale-type']
           assign label_color = block.settings.color
           assign label_shape = block.settings.shape
         -%}
@@ -129,18 +153,17 @@
                 data-text-color="gray"
               {% endif %}
             >
-              {{- cart.currency.symbol -}}{{- price_t -}}
+              {{- cart.currency.symbol -}}
+              {{- price_t -}}
             </span>
           </div>
         {%- else -%}
           {%- render 'product-price', product: product, id: product_id -%}
-
         {%- endif -%}
 
       {%- when 'low-stock' -%}
         {%- unless onboarding -%}
-          {%-
-            render 'product-low-stock',
+          {%- render 'product-low-stock',
             current_variant: current_variant,
             id: product_id,
             product: product,
@@ -150,21 +173,16 @@
 
       {%- when 'options' -%}
         {%- unless onboarding -%}
-          {%-
-            render 'product-options',
-            id: product_id,
-            product: product,
-            block_settings: block.settings
-          -%}
+          {%- render 'product-options', id: product_id, product: product, block_settings: block.settings -%}
 
           {%- liquid
-            if block.settings.size-chart-enabled
-              assign size_chart_option = block.settings.size-chart-option | strip | downcase
+            if block.settings['size-chart-enabled']
+              assign size_chart_option = block.settings['size-chart-option'] | strip | downcase
 
               for option in product.options_with_values
                 assign option_name = option.name | strip | downcase
                 if option_name == size_chart_option
-                  if block.settings.size-chart-content == blank
+                  if block.settings['size-chart-content'] == blank
                     capture size_chart_path
                       assign size_chart_path_t = 'products.size_chart_path' | t
                       echo '<code>' | append: size_chart_path_t | append: '</code>'
@@ -172,7 +190,7 @@
 
                     assign page_content = 'products.empty_page_content_html' | t: size_chart_path: size_chart_path
                   else
-                    assign page_content = pages[block.settings.size-chart-content].content
+                    assign page_content = pages[block.settings['size-chart-content']].content
                   endif
 
                   assign render_size_chart_modal = true
@@ -189,7 +207,7 @@
             class="product--block--add-to-cart"
             data-item="button"
             data-text="{{ add_to_cart_t }}"
-            {% unless settings.transitions--buttons %}
+            {% unless settings['transitions--buttons'] %}
               data-transition-button
             {% endunless %}
           >
@@ -197,14 +215,12 @@
           </div>
 
         {%- else -%}
-          {%-
-            render 'product-buy-buttons',
+          {%- render 'product-buy-buttons',
             id: product_id,
             product: product,
             form: form,
-            smart_payment_enabled: block.settings.smart-payment-enabled
+            smart_payment_enabled: block.settings['smart-payment-enabled']
           -%}
-
         {%- endif -%}
 
       {%- when 'quantity-selector' -%}
@@ -224,8 +240,7 @@
         {%- render 'product-rating', product: product -%}
 
       {%- when 'social-sharing' -%}
-        {%-
-          render 'social-icons',
+        {%- render 'social-icons',
           align: 'left',
           mobile_align: 'left',
           type: 'share',
@@ -237,12 +252,11 @@
 
       {%- when 'collapsible-row' -%}
         {%- assign unique_id = section.id | append: '--collapsible-row--' | append: forloop.index -%}
-        {%-
-          render 'collapsible-row',
+        {%- render 'collapsible-row',
           description: block.settings.description,
           heading: block.settings.heading,
-          default_open: block.settings.default-open,
-          page_content: block.settings.page-content,
+          default_open: block.settings['default-open'],
+          page_content: block.settings['page-content'],
           unique_id: unique_id
         -%}
 
@@ -250,7 +264,7 @@
         {%- unless product.description == blank -%}
           <div class="product--block--description" data-item="rte-content">
             {%- liquid
-              if block.settings.collapsible-row-enabled
+              if block.settings['collapsible-row-enabled']
                 assign unique_id = section.id | append: '-' | append: block.id
                 render 'collapsible-row', heading: block.settings.heading, description: product.description, unique_id: unique_id
               else
@@ -261,19 +275,18 @@
         {%- endunless -%}
 
       {%- when 'complementary-products' -%}
-        {%-
-          render 'complementary-products',
+        {%- render 'complementary-products',
           heading: block.settings.title,
-          max_products: block.settings.max-products,
-          collapsible_row: block.settings.collapsible-row-enabled,
+          max_products: block.settings['max-products'],
+          collapsible_row: block.settings['collapsible-row-enabled'],
           product_id: product.id
         -%}
 
       {%- when 'icon' -%}
         {%- liquid
           assign icon = block.settings.icon
-          assign icon_image = block.settings.icon-image
-          assign icon_width = block.settings.icon-width
+          assign icon_image = block.settings['icon-image']
+          assign icon_width = block.settings['icon-width']
           assign text = block.settings.text
         -%}
 
@@ -299,11 +312,10 @@
         </div>
 
       {%- when 'liquid' -%}
-        {{- block.settings.custom-liquid -}}
+        {{- block.settings['custom-liquid'] -}}
 
       {%- when '@app' -%}
         {%- render block -%}
-
     {%- endcase -%}
   </div>
 {%- endfor -%}
