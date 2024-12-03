@@ -88,6 +88,13 @@
       data-mq="small"
       data-layout="{{ mobile_media_layout }}"
     >
+      {%-
+        render 'product--blocks',
+        product: product,
+        block: 'heading',
+        section: nil,
+        onboarding: false
+      -%}
       {%- if mobile_media_layout == 'thumbnails' -%}
         {%-
           render 'product-media--variants',
