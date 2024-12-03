@@ -68,6 +68,14 @@
 
     <div class="main-product--desktop" data-mq="medium-large">
       {%-
+        render 'product--blocks',
+        product: product,
+        block: 'heading',
+        section: nil,
+        onboarding: false
+      -%}
+
+      {%-
         render 'product-media--variants',
         product: product,
         product_id: product_id,
