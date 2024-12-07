@@ -101,25 +101,22 @@
       --font--sub-nav--mobile-size: {{ settings.typography--sub-nav--size }}px;
     {%- endif -%}
 
-    --font--heading--family: {{ font--heading.family }}, {{ font--heading.fallback_families }};
+    --font--heading--family: "Noto Sans JP Condensed", {{ font--heading.family }}, {{ font--heading.fallback_families }};
     --font--heading--weight: {{ font--heading.weight | default: 400 }};
     --font--heading--normal-weight: {{ font--heading--normal.weight | default: 400 }};
     --font--heading--style: {{ font--heading.style }};
     --font--heading--spacing: {{ settings.typography--heading--spacing }}px;
 
-    --font--nav--family: {{ font--nav.family }}, {{ font--nav.fallback_families }};
+    --font--nav--family: "Noto Sans JP Condensed", {{ font--nav.family }}, {{ font--nav.fallback_families }};
     --font--nav--weight: {{ font--nav.weight | default: 400 }};
     --font--nav--style: {{ font--nav.style }};
 
-    --font--paragraph--family: {{ font--paragraph.family }}, {{ font--paragraph.fallback_families }};
+    --font--paragraph--family: "Noto Sans JP Condensed", {{ font--paragraph.family }}, {{ font--paragraph.fallback_families }};
     --font--paragraph--weight: 500;
     --font--paragraph--style: {{ font--paragraph.style }};
     --font--paragraph--spacing: {{ settings.typography--paragraph--spacing }}px;
 
     --font--button--spacing: {{ settings.typography--button--spacing }}px;
-    --font--line-height: 1.78;
-  }
-  span, p, [data-item="nav-text"], [data-item="nav-text--sub"] {
-    transform: scaleX(0.8);
+    --font--line-height: 1.2;
   }
 </style>

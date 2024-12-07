@@ -11,7 +11,7 @@
   }
 </script>
 
-{%- unless settings.typography--heading == blank -%}
+{% comment %} {%- unless settings.typography--heading == blank -%}
   <link
     rel="preload"
     href="{{ settings.typography--heading | font_url }}"
@@ -29,9 +29,9 @@
     type="font/woff2"
     crossorigin
   >
-{%- endunless -%}
+{%- endunless -%} {% endcomment %}
 
-{%- unless settings.typography--paragraph == blank -%}
+{% comment %} {%- unless settings.typography--paragraph == blank -%}
   <link
     rel="preload"
     href="{{ settings.typography--paragraph | font_url }}"
@@ -39,4 +39,12 @@
     type="font/woff2"
     crossorigin
   >
-{%- endunless -%}
+{%- endunless -%} {% endcomment %}
+
+<link
+  rel="preload"
+  href="https://cdn.shopify.com/s/files/1/0680/3154/5642/files/NotoSansJP-Condensed.woff2?v=1733559473"
+  as="font"
+  type="font/woff2"
+  crossorigin
+>

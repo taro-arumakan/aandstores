@@ -25,9 +25,18 @@
       <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 32 }}" type="image/png">
       <link rel="apple-touch-icon" href="{{ settings.favicon | image_url: width: 180 }}">
     {%- endif -%}
-
     {%- liquid
       render 'preload'
+    -%}
+
+    <style>
+      @font-face {
+        font-family: 'Noto Sans JP Condensed';
+        src: url("https://cdn.shopify.com/s/files/1/0680/3154/5642/files/NotoSansJP-Condensed.woff2?v=1733559473") format('woff2');
+      }
+    </style>
+
+    {%- liquid
       render 'meta-tags'
       render 'css-typography'
       render 'css-variables'
