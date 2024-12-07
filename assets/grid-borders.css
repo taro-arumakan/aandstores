@@ -335,16 +335,24 @@ product-card .product-card--details {
 }
 
 /* related products */
-.related-products--root, .related-products--grid, .related-products--wrapper {
+.recent-products--root,
+.recent-products--grid,
+.recent-products--wrapper,
+.related-products--root,
+.related-products--grid,
+.related-products--wrapper {
   padding: 0;
   grid-gap: 0;
 }
 
-.related-products--header {
+.related-products--header,
+.recent-products--header
+ {
   padding-top: var(--spacing--section--y);
   padding-bottom: var(--spacing--section--y);
 }
 
+.recent-products--grid::before,
 .related-products--grid::before {
   content: "";
   display: block;
