@@ -9618,12 +9618,11 @@ input[type=hidden]+.product--block[data-block-type] {
   .quantity-selector--remove {
     padding-top: calc(var(--spacing--item)/ 2)
   }
-
-  .recent-products--title {
-    text-align: center
-  }
 }
-
+.recent-products--title {
+  text-align: center;
+  padding: 1rem;
+}
 .quantity-selector--remove:hover {
   cursor: pointer
 }
