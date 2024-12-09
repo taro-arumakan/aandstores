@@ -363,3 +363,31 @@ product-card .product-card--details {
   left: -1.2rem;
   z-index: 1;
 }
+
+.main-product--desktop,
+.product--header {
+  width: calc(100% - var(--text-column-width) - var(--spacing--block));
+  background-color: #e0e0e0;
+}
+
+product-media-variants.product-media--variants--root {
+  padding: 0 1px;
+}
+
+.product--block--heading {
+  background-color: white;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+[data-item~=section-heading]:before {
+  display: none;
+}
+.product-model--root model-viewer {
+  border: none;
+}
+.product-model--button[data-item] {
+  display: none;
+  width: 100%;
+  margin-top: var(--spacing--item);
+  margin-bottom: var(--spacing--item);
+}

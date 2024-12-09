@@ -100,7 +100,7 @@
         "spacing-below": true,
         "media-layout": "mixed",
         "text-column-width": 30,
-        "media-gap": 0,
+        "media-gap": 1,
         "column-spacing": "close",
         "text-alignment": "left",
         "thumbnail-width": 80,
