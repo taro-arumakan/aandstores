@@ -131,31 +131,32 @@
     {%- if load_thumbs -%}
       {%- capture thumbs_html -%}
         {{- thumbs_html -}}
+        {%- unless media.media_type == "model" %}
+          <div
+            class="product-media--thumb"
+            data-active="{{ media_active }}"
+            data-id="{{ media.id }}"
+            tabindex="0"
+          >
+            {%- assign sizes = thumbnail_width | append: 'px' -%}
+            {{-
+              media.preview_image |
+              image_url: width: media.preview_image.width |
+              image_tag:
+                widths: "50, 100, 200",
+                sizes: sizes,
+                loading: 'lazy'
+            -}}
 
-        <div
-          class="product-media--thumb"
-          data-active="{{ media_active }}"
-          data-id="{{ media.id }}"
-          tabindex="0"
-        >
-          {%- assign sizes = thumbnail_width | append: 'px' -%}
-          {{-
-            media.preview_image |
-            image_url: width: media.preview_image.width |
-            image_tag:
-              widths: "50, 100, 200",
-              sizes: sizes,
-              loading: 'lazy'
-          -}}
-
-          {%- liquid
-            if media.media_type == "model"
-              render 'icons', icon: '3d-badge'
-            elsif media.media_type == "video" or media.media_type == "external_video"
-              render 'icons', icon: 'play-badge'
-            endif
-          -%}
-        </div>
+            {%- liquid
+              if media.media_type == "model"
+                render 'icons', icon: '3d-badge'
+              elsif media.media_type == "video" or media.media_type == "external_video"
+                render 'icons', icon: 'play-badge'
+              endif
+            -%}
+          </div>
+        {% endunless %}
       {%- endcapture -%}
     {%- endif -%}
   {%- endfor -%}
@@ -230,6 +231,14 @@
       {%- endif -%}
     </div>
   </div>
+
+  {%- comment -%}Add the "view in your space" button, which allows to show the product in customer's environment (if the device supports it){%- endcomment -%}
+  {%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
+  {%- if first_3d_model -%}
+    <button class="Product__ViewInSpace Button Button--full" data-shopify-xr data-shopify-model3d-id="{{ first_3d_model.id }}" data-shopify-model3d-default-id="{{ first_3d_model.id }}" data-shopify-title="{{ product.title | escape }}" data-shopify-xr-hidden>
+      {%- render 'icons', icon: '3d-badge' -%} {{- 'あなたの空間で見る' -}}
+    </button>
+  {%- endif -%}
 
   {%- if load_thumbs -%}
     <product-thumbs-element class="product-media--thumbs" data-id="{{ product_id }}">
