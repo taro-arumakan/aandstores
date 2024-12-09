@@ -276,6 +276,16 @@
       },
       {
         "type": "range",
+        "id": "typography--paragraph--mobile-size",
+        "label": "Mobile Size",
+        "min": 10,
+        "max": 22,
+        "step": 1,
+        "unit": "px",
+        "default": 14
+      },
+      {
+        "type": "range",
         "id": "typography--featured-paragraph--size",
         "label": "Featured size",
         "min": 10,
