@@ -162,18 +162,6 @@
   {%- endfor -%}
 {%- endif -%}
 
-{%- if load_model -%}
-  <script type="application/json" id="{{ product_id }}-model_json">
-    {%- assign product_models = product.media | where: 'media_type', 'model' -%}
-    {{- product_models | json -}}
-  </script>
-  <link
-    href="/cdn/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css"
-    rel="stylesheet"
-    media="all"
-  />
-{%- endif -%}
-
 <product-media-variants
   class="product-media--variants--root"
   data-id="{{ product_id }}"
@@ -235,9 +223,19 @@
   {%- comment -%}Add the "view in your space" button, which allows to show the product in customer's environment (if the device supports it){%- endcomment -%}
   {%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
   {%- if first_3d_model -%}
-    <button class="product-view-in-space" data-item="button-full" data-shopify-model3d-id="{{ first_3d_model.id }}" data-shopify-model3d-default-id="{{ first_3d_model.id }}" data-shopify-title="{{ product.title | escape }}" data-shopify-xr-hidden>
+
+  <script type="application/json" id="{{ product_id }}-model_json">
+    {%- assign product_models = product.media | where: 'media_type', 'model' -%}
+    {{- product_models | json -}}
+  </script>
+
+  <link rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'; this.onload = null">
+
+  <button class="button product-view-in-space" data-item="button-full" data-shopify-xr data-shopify-model3d-id="{{ first_3d_model.id }}" data-shopify-model3d-default-id="{{ first_3d_model.id }}" data-shopify-title="{{ product.title | escape }}" data-shopify-xr-hidden>
+    <span class="text-with-icon justify-center">
       {%- render 'icons', icon: '3d-badge' -%} {{- 'products.view_ar' | t -}}
-    </button>
+    </span>
+  </button>
   {%- endif -%}
 
   {%- if load_thumbs -%}
