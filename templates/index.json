@@ -76,7 +76,7 @@
         "slide-2"
       ],
       "custom_css": [
-        "@media only screen and (max-width: 767px) {.carousel--dot-container {padding: 10px 0 10px;}}",
+        "@media only screen and (max-width: 767px) {.carousel--dot-container {padding: 10px 0 10px; }}",
         ".carousel--dot {--stroke: 2px;}"
       ],
       "settings": {
@@ -210,9 +210,9 @@
         "section-alignment": "center",
         "display-type": "grid",
         "products-per-row--desktop": "4",
-        "collection": "all-1",
+        "collection": "bundles",
         "max-products": 6,
-        "heading": "NEW",
+        "heading": "BUNDLE",
         "products-per-row--mobile": "2"
       }
     }
