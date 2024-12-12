@@ -235,8 +235,8 @@
   {%- comment -%}Add the "view in your space" button, which allows to show the product in customer's environment (if the device supports it){%- endcomment -%}
   {%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
   {%- if first_3d_model -%}
-    <button class="Product__ViewInSpace Button Button--full" data-shopify-xr data-shopify-model3d-id="{{ first_3d_model.id }}" data-shopify-model3d-default-id="{{ first_3d_model.id }}" data-shopify-title="{{ product.title | escape }}" data-shopify-xr-hidden>
-      {%- render 'icons', icon: '3d-badge' -%} {{- 'あなたの空間で見る' -}}
+    <button class="product-view-in-space" data-item="button-full" data-shopify-model3d-id="{{ first_3d_model.id }}" data-shopify-model3d-default-id="{{ first_3d_model.id }}" data-shopify-title="{{ product.title | escape }}" data-shopify-xr-hidden>
+      {%- render 'icons', icon: '3d-badge' -%} {{- 'products.view_ar' | t -}}
     </button>
   {%- endif -%}
 
