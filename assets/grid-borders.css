@@ -15,7 +15,7 @@
 .shopify-section:not(.shopify-section-group-footer-group, .shopify-section-group-overlay-group)::after {
   content: "";
   display: block;
-  width: 100vw;
+  width: calc(100% + 2.4rem);
   height: 1px;
   background-color: #e0e0e0;
   position: absolute;
@@ -45,7 +45,7 @@
 .featured-collection--products::before {
   content: "";
   display: block;
-  width: 100vw;
+  width: calc(100% + 2.4rem);
   height: 1px;
   background-color: #e0e0e0;
   position: absolute;
@@ -56,7 +56,7 @@
 .featured-collection--products::after {
   content: "";
   display: block;
-  width: 100vw;
+  width: calc(100% + 2.4rem);
   height: 1px;
   background-color: #e0e0e0;
   position: absolute;
@@ -222,7 +222,7 @@ product-card .product-card--details {
 .blog--body::before {
   content: "";
   display: block;
-  width: 100vw;
+  width: calc(100% + 2.4rem);
   height: 1px;
   background-color: #e0e0e0;
   position: absolute;
@@ -312,7 +312,7 @@ product-card .product-card--details {
 .product-media--thumbs-wrapper::before {
   content: "";
   display: block;
-  width: 100vw;
+  width: calc(100% + 4.8rem);
   height: 1px;
   background-color: #e0e0e0;
   position: absolute;
@@ -323,7 +323,7 @@ product-card .product-card--details {
 .product-media--thumbs-wrapper::after {
   content: "";
   display: block;
-  width: 100vw;
+  width: calc(100% + 4.8rem);
   height: 1px;
   background-color: #e0e0e0;
   position: absolute;
@@ -375,7 +375,7 @@ product-card .product-card--details {
 .related-products--grid::before {
   content: "";
   display: block;
-  width: 100vw;
+  width: calc(100% + 2.4rem);
   height: 1px;
   background-color: #e0e0e0;
   position: absolute;
@@ -413,4 +413,25 @@ product-media-variants.product-media--variants--root {
 
 [data-item~=section-heading] {
   transform: translateY(1px);
+}
+
+
+[data-item=button-full] {
+  position: relative;
+  width: 100%;
+  font-family: var(--font--nav--family);
+  font-weight: var(--font--nav--weight);
+  font-style: var(--font--nav--style);
+  font-size: 16px;
+  padding: .5rem 0;
+}
+[data-item=button-full]::before {
+  content: "";
+  display: block;
+  width: calc(100% + 4.8rem);
+  height: 1px;
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 0;
+  left: -2.4rem;
 }
