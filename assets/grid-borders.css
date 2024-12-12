@@ -309,10 +309,6 @@ product-card .product-card--details {
 }
 
 /* products */
-/* .main-product--root[data-section-id] {
-  padding: 0;
-} */
-
 .product-media--thumbs-wrapper {
   grid-gap: unset;
   border-left: 1px solid #e0e0e0;
@@ -361,6 +357,13 @@ product-card .product-card--details {
   position: absolute;
   bottom: 0;
   z-index: 1;
+}
+
+.product-media--thumb {
+  display: flex
+}
+.product-media--thumb>img {
+  align-self: center;
 }
 
 /* related products */
