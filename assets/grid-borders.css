@@ -312,6 +312,7 @@ product-card .product-card--details {
 .product-media--thumbs-wrapper {
   grid-gap: unset;
   border-left: 1px solid #e0e0e0;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .product-media--thumbs-wrapper::before {
@@ -362,7 +363,9 @@ product-card .product-card--details {
 .product-media--thumb {
   display: flex
 }
-.product-media--thumb>img {
+.product-media--thumb>img, .product-media--root>img {
+  object-fit: contain;
+  aspect-ratio: 1;
   align-self: center;
 }
 
