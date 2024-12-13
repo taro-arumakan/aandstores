@@ -11,6 +11,7 @@
   "sections": {
     "header-promo": {
       "type": "image-with-text",
+      "disabled": true,
       "custom_css": [
         ".featured-content--container {justify-content: center; align-items: center;}",
         ".image--root {height: 100px; max-width: 200px;}",
@@ -107,10 +108,10 @@
         "text-background-color": "transparent",
         "image-display-type": "medium",
         "aspect-ratio": 56,
-        "overlay-style": "darken-bottom",
+        "overlay-style": "none",
         "parallax-enabled": false,
         "image": "shopify://shop_images/2000x1334_01.jpg",
-        "overline": "COMING SOON",
+        "overline": "",
         "title": "",
         "highlight-type": "italic",
         "highlight-color": "#ffdd66",
@@ -127,7 +128,6 @@
     },
     "main": {
       "type": "main-collection",
-      "disabled": true,
       "custom_css": [
         ".collection-promo--root {min-height: 350px;}"
       ],
