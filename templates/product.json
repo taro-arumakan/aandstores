@@ -344,6 +344,18 @@
         "container-width": "4",
         "title": "You may also like"
       }
+    },
+    "recent_products_GUmgGt": {
+      "type": "recent-products",
+      "settings": {
+        "top-border": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "background-color": "none",
+        "white-text": false,
+        "heading-alignment": "center",
+        "heading": "Recently viewed"
+      }
     }
   },
   "order": [
@@ -353,6 +365,7 @@
     "5041891c-740e-40b2-a00d-936d32f31a4c",
     "9122b6fc-3d6e-4f6b-8054-88ddcb8687a7",
     "c2ba49d2-bed2-49dc-99ea-8c0f5139cc92",
-    "related-products"
+    "related-products",
+    "recent_products_GUmgGt"
   ]
 }
