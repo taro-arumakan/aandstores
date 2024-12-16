@@ -414,7 +414,9 @@ product-card .product-card--details {
 }
 .predictive-search--product-grid .product-card--details {
   min-height: 6.5rem;
-  /* min-height: calc(20520px / calc((100vw - 2.4rem) / 2) );     cannot divide by a unit value */
+  /* cannot divide by a unit value
+  --number-of-lines: calc((9px * 65) / ((100vw - 2.4rem) / 2 - 2rem));
+  min-height: calc(16px * (var(--number-of-lines) + 1) + 2rem); */
   margin: 1rem 0;
 }
 
