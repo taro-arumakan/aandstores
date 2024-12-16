@@ -148,9 +148,9 @@ product-card .product-card--details {
   flex: 1;
   margin-top: 5px;
   margin-bottom: 20px;
-
   font-size: var(--font--paragraph--size);
   letter-spacing: -1px;
+  justify-content: space-between;
 }
 
 [data-item=block-link]>*,
@@ -385,15 +385,37 @@ product-card .product-card--details {
   align-self: center;
 }
 
-/* related products */
+/* related, recent, search products */
 .recent-products--root,
 .recent-products--grid,
 .recent-products--wrapper,
 .related-products--root,
 .related-products--grid,
-.related-products--wrapper {
+.related-products--wrapper,
+.search-results--products,
+.search-results--root,
+.search-results--root[data-view=product],
+.predictive-search--product-grid {
   padding: 0;
   grid-gap: 0;
+}
+
+.predictive-search--product-grid {
+  border-top: 1px solid #e2e2e2;
+  border-left: 1px solid #e2e2e2;
+}
+
+.predictive-search--product-grid > #shopify-section-product-card::after {
+  width: 100%;
+  left: 0;
+}
+.predictive-search--product-grid .product-card--details-wrapper {
+  margin: 0 1rem;
+}
+.predictive-search--product-grid .product-card--details {
+  min-height: 6.5rem;
+  /* min-height: calc(20520px / calc((100vw - 2.4rem) / 2) );     cannot divide by a unit value */
+  margin: 1rem 0;
 }
 
 .related-products--header,
