@@ -105,6 +105,7 @@
     },
     "custom_content_zprGrU": {
       "type": "custom-content",
+      "disabled": true,
       "custom_css": [
         "h1 {font-size: var(--font--section--size);}",
         "@media only screen and (max-width: 767px) {h1 {font-size: var(--font--section--mobile-size); }}"
@@ -117,14 +118,14 @@
         "white-text": false,
         "text-alignment": "center",
         "container-width": "6",
-        "custom_html": "<div><h1>BRAND</h1></div>"
+        "custom_html": "<div><h1>BRANDS</h1></div>"
       }
     },
     "image_with_text_7K63Wt": {
       "type": "image-with-text",
       "settings": {
         "top-border": false,
-        "spacing-above": false,
+        "spacing-above": true,
         "spacing-below": false,
         "background-color": "none",
         "container-width": "6",
@@ -140,7 +141,7 @@
         "image-display-type": "medium",
         "aspect-ratio": 56,
         "overlay-style": "none",
-        "parallax-enabled": false,
+        "parallax-enabled": true,
         "image": "shopify://shop_images/hibrow_brand_banner.png",
         "overline": "",
         "title": "",
@@ -150,11 +151,31 @@
         "description": "",
         "link-url": "shopify://collections/hibrow",
         "link-text": "",
+        "mobile-image": "shopify://shop_images/hibrow_brand_banner_mobile.jpg",
         "mobile-overlay": true,
         "mobile-hide-description": false,
-        "mobile-image-display-type": "original",
+        "mobile-image-display-type": "fit-screen",
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center"
+      }
+    },
+    "featured_collection_MBXmKK": {
+      "type": "featured-collection",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": true,
+        "image-enabled": false,
+        "description-enabled": false,
+        "background-color": "none",
+        "white-text": false,
+        "section-alignment": "center",
+        "display-type": "grid",
+        "products-per-row--desktop": "4",
+        "collection": "bundles",
+        "max-products": 6,
+        "heading": "",
+        "products-per-row--mobile": "2"
       }
     },
     "image_with_text_DwJCPd": {
@@ -180,7 +201,7 @@
         "image-display-type": "medium",
         "aspect-ratio": 56,
         "overlay-style": "none",
-        "parallax-enabled": false,
+        "parallax-enabled": true,
         "image": "shopify://shop_images/2000x1334_01.jpg",
         "overline": "",
         "title": "",
@@ -190,18 +211,19 @@
         "description": "",
         "link-url": "shopify://collections/photozeniagoods-1",
         "link-text": "",
+        "mobile-image": "shopify://shop_images/pzg_brand_banner_mobile.jpg",
         "mobile-overlay": true,
         "mobile-hide-description": false,
-        "mobile-image-display-type": "original",
+        "mobile-image-display-type": "fit-screen",
         "mobile-aspect-ratio": 134,
         "mobile-text-alignment": "center"
       }
     },
-    "featured_collection_MBXmKK": {
+    "featured_collection_43jdDr": {
       "type": "featured-collection",
       "settings": {
         "top-border": false,
-        "spacing-above": true,
+        "spacing-above": false,
         "spacing-below": true,
         "image-enabled": false,
         "description-enabled": false,
@@ -210,9 +232,9 @@
         "section-alignment": "center",
         "display-type": "grid",
         "products-per-row--desktop": "4",
-        "collection": "bundles",
+        "collection": "photozeniagoods-1",
         "max-products": 6,
-        "heading": "BUNDLE",
+        "heading": "",
         "products-per-row--mobile": "2"
       }
     }
@@ -221,7 +243,8 @@
     "slideshow",
     "custom_content_zprGrU",
     "image_with_text_7K63Wt",
+    "featured_collection_MBXmKK",
     "image_with_text_DwJCPd",
-    "featured_collection_MBXmKK"
+    "featured_collection_43jdDr"
   ]
 }
