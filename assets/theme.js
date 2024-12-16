@@ -3335,6 +3335,8 @@ class PredictiveSearch extends HTMLElement {
       (this.clear_button = this.querySelector(".search--clear")),
       (this.input = this.querySelector(".search--textbox")),
       (this.results = this.querySelector(".search--results")),
+      (this.results_placeholder = this.querySelector('.predictive-search--products')),
+      (this.results_grid = this.querySelector('.predictive-search--product-grid')),
       (this.cached_results = { "": this.results.innerHTML }),
       this.listenForKeyEntered(),
       this.formSubmit(),
@@ -3355,25 +3357,33 @@ class PredictiveSearch extends HTMLElement {
     else {
       (this.abort_controller = new AbortController()), this.toggleLoading(!0);
       try {
-        var i = await fetch(
-          `${Shopify.routes.predictive_search}?q=${encodeURIComponent(
+        var r = await fetch(
+            `${Shopify.routes.search}?type=product&view=json&q=${encodeURIComponent(
             t
-          )}&section_id=predictive-search`,
+          )}`,
           { signal: this.abort_controller.signal }
         );
-        if (!i.ok) throw new Error(i.status);
-        var s = (await i.text()).parse().innerHTML;
-        (this.cached_results[e] = s), (this.results.innerHTML = s);
-      } catch {}
+        if (!r.ok) throw new Error(r.status);
+        var s = await r.json();
+        var regex = new RegExp('data-transition-item', 'g');
+        this.results_grid.innerHTML = '';
+        console.log(s);
+        var self = this;
+        s.forEach(function (item) {
+          fetch(`/products/${item.handle}?sections=product-card`)
+            .then(response => response.json())
+            .then(data => self.results_grid.insertAdjacentHTML('beforeend', data['product-card'].replace(regex, 'div')));
+        })
+      } catch { }
     }
   }
   clearButtonListener() {
     this.clear_button.on("click keydown", (t) => {
       ("keydown" === t.type && "Enter" !== t.key) ||
         (t.preventDefault(),
-        (this.input.value = ""),
-        this.input.focus(),
-        this.input.trigger("input"));
+          (this.input.value = ""),
+          this.input.focus(),
+          this.input.trigger("input"));
     });
   }
   toggleLoading(t) {
@@ -3397,6 +3407,7 @@ class PredictiveSearch extends HTMLElement {
   }
 }
 customElements.define("predictive-search-element", PredictiveSearch);
+
 class PriceRange extends HTMLElement {
   constructor() {
     super();

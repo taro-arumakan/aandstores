@@ -9,8 +9,29 @@
  */
 {
   "sections": {
-    "navigation": { "type": "search-navigation", "settings": {} },
-    "main": { "type": "search-results", "settings": {} }
+    "navigation": {
+      "type": "search-navigation",
+      "settings": {
+        "show-sort-button": true,
+        "show-refine-button": false,
+        "show-layout-buttons": true,
+        "show-sort-list": true,
+        "show-refine-list": true,
+        "swatches": "circle",
+        "show-search-link": true
+      }
+    },
+    "main": {
+      "type": "search-results",
+      "settings": {
+        "products-per-row--desktop": 4,
+        "products-per-row--mobile": "2",
+        "number-of-rows": 12
+      }
+    }
   },
-  "order": ["navigation", "main"]
+  "order": [
+    "navigation",
+    "main"
+  ]
 }
