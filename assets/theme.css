@@ -8766,11 +8766,11 @@ input[type=hidden]+.product--block[data-block-type] {
   flex-wrap: wrap;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   margin: 0;
   z-index: 1;
-  border-top: solid 70px black;
-  border-right: solid 70px transparent;
+  border-top: solid 32px #f3cd00;
+  border-left: solid 55px transparent;
   text-align: left;
 }
 
@@ -8798,11 +8798,11 @@ input[type=hidden]+.product--block[data-block-type] {
 .product--label[data-label-shape=square] {
   /* padding: 4px var(--spacing--1) */
   top: 0;
-  left: 3px;
+  right: 3px;
   margin: 0;
   position: absolute;
   text-align: left;
-  top: -60px;
+  top: -35px;
   background-color: transparent;
 }
 
