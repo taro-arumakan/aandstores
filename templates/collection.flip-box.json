@@ -1,0 +1,155 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header-promo": {
+      "type": "image-with-text",
+      "custom_css": [
+        "img {object-fit: contain;}"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "container-width": "5",
+        "white-text": false,
+        "overlap": false,
+        "heading-type": "featured-heading",
+        "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
+        "text-width": "medium",
+        "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "fit-screen",
+        "aspect-ratio": 56,
+        "overlay-style": "none",
+        "parallax-enabled": false,
+        "image": "shopify://shop_images/5c0b1c8ce3f7c3802b53eb154f8861c4.gif",
+        "overline": "",
+        "title": "",
+        "highlight-type": "italic",
+        "highlight-color": "#ffdd66",
+        "highlight-text": "#000000",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-overlay": false,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "aspect-ratio",
+        "mobile-aspect-ratio": 120,
+        "mobile-text-alignment": "center"
+      }
+    },
+    "collection-header": {
+      "type": "collection-header",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "show-title": true,
+        "heading-type": "featured-heading",
+        "heading-alignment": "left",
+        "show-description": false,
+        "description-alignment": "with-title",
+        "white-text": true,
+        "show-image": true,
+        "use-image-fallback": true,
+        "image-display-type": "fit-screen",
+        "aspect-ratio": 56,
+        "mobile-image-display-type": "aspect-ratio",
+        "mobile-aspect-ratio": 120,
+        "text-style": "none",
+        "overlay-style": "none",
+        "parallax-enabled": false
+      }
+    },
+    "navigation": {
+      "type": "collection-navigation",
+      "disabled": true,
+      "settings": {
+        "show-browse-button": true,
+        "show-sort-button": true,
+        "show-refine-button": true,
+        "show-layout-buttons": true,
+        "show-collections-list": true,
+        "custom-list-collections": "",
+        "show-sort-list": true,
+        "show-refine-list": true,
+        "swatches": "circle",
+        "show-search-link": true
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "blocks": {
+        "grid-promo-1": {
+          "type": "promotion",
+          "settings": {
+            "row-number": 2,
+            "column-number": 2,
+            "promo-width": "full",
+            "heading-type": "section-heading",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "text-width": "medium",
+            "text-style": "none",
+            "background-color": "none",
+            "text-background-color": "transparent",
+            "overlay-style": "darken-bottom",
+            "parallax-enabled": false,
+            "white-text": true,
+            "image": "shopify://shop_images/FullSizeRender_4.jpg",
+            "overline": "FLIP BOXの様々な活用事例をご紹介",
+            "title": "FLIP BOX GALLERY",
+            "highlight-type": "italic",
+            "highlight-color": "#ffdd66",
+            "highlight-text": "#000000",
+            "description": "",
+            "link-url": "shopify://blogs/flip-box-gallery",
+            "link-text": "Gallery",
+            "mobile-hide-description": false,
+            "mobile-text-alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "grid-promo-1"
+      ],
+      "custom_css": [
+        ".collection-promo--root {min-height: 350px;}"
+      ],
+      "settings": {
+        "products-per-row--desktop": 4,
+        "products-per-row--mobile": "2",
+        "number-of-rows": 4
+      }
+    },
+    "recent-products": {
+      "type": "recent-products",
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": true,
+        "background-color": "none",
+        "white-text": false,
+        "heading-alignment": "center",
+        "heading": "Recently viewed"
+      }
+    }
+  },
+  "order": [
+    "header-promo",
+    "collection-header",
+    "navigation",
+    "main",
+    "recent-products"
+  ]
+}
