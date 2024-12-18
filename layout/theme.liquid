@@ -46,8 +46,11 @@
     {{ 'theme.css' | asset_url | stylesheet_tag: preload: true }}
     {{ 'grid-borders.css' | asset_url | stylesheet_tag: preload: true }}
     {{ 'articles.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'animate.css' | asset_url | stylesheet_tag: preload: true }}
     {{ content_for_header }}
     {%- render 'routes' -%}
+
+    <script src="{{ 'animate.js' | asset_url }}" defer></script>
 
     {%- if request.page_type contains 'customers' -%}
       <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer></script>
