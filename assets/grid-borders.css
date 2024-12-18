@@ -153,6 +153,15 @@ product-card .product-card--details {
   justify-content: space-between;
 }
 
+.product-card--details-wrapper {
+  margin: 0 0.4rem;
+  line-height: 1.2em;
+}
+
+.product--price-wrapper {
+  margin-top: 0.5rem;
+}
+
 [data-item=block-link]>*,
 [data-item=overline],
 [data-item=nav-text] {
@@ -408,9 +417,6 @@ product-card .product-card--details {
 .predictive-search--product-grid > #shopify-section-product-card::after {
   width: 100%;
   left: 0;
-}
-.predictive-search--product-grid .product-card--details-wrapper {
-  margin: 0 1rem;
 }
 .predictive-search--product-grid .product-card--details {
   min-height: 6.5rem;
