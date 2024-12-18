@@ -33,7 +33,7 @@
         "text-width": "medium",
         "text-style": "none",
         "text-background-color": "transparent",
-        "image-display-type": "x-small",
+        "image-display-type": "fit-screen",
         "aspect-ratio": 56,
         "overlay-style": "none",
         "parallax-enabled": false,
@@ -48,8 +48,8 @@
         "link-text": "",
         "mobile-overlay": false,
         "mobile-hide-description": false,
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
+        "mobile-image-display-type": "aspect-ratio",
+        "mobile-aspect-ratio": 120,
         "mobile-text-alignment": "center"
       }
     },
@@ -67,8 +67,8 @@
         "use-image-fallback": true,
         "image-display-type": "fit-screen",
         "aspect-ratio": 56,
-        "mobile-image-display-type": "medium",
-        "mobile-aspect-ratio": 134,
+        "mobile-image-display-type": "aspect-ratio",
+        "mobile-aspect-ratio": 120,
         "text-style": "none",
         "overlay-style": "none",
         "parallax-enabled": false

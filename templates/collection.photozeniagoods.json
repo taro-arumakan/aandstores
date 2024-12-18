@@ -106,8 +106,8 @@
         "text-width": "medium",
         "text-style": "none",
         "text-background-color": "transparent",
-        "image-display-type": "medium",
-        "aspect-ratio": 56,
+        "image-display-type": "fit-screen",
+        "aspect-ratio": 120,
         "overlay-style": "none",
         "parallax-enabled": false,
         "image": "shopify://shop_images/2000x1334_01.jpg",
@@ -121,8 +121,8 @@
         "link-text": "",
         "mobile-overlay": true,
         "mobile-hide-description": false,
-        "mobile-image-display-type": "original",
-        "mobile-aspect-ratio": 134,
+        "mobile-image-display-type": "aspect-ratio",
+        "mobile-aspect-ratio": 120,
         "mobile-text-alignment": "center"
       }
     },

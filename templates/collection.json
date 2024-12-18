@@ -11,10 +11,7 @@
   "sections": {
     "collection-header": {
       "type": "collection-header",
-      "custom_css": [
-        "img {object-fit: contain; max-width: 200px; margin-top: 30px; margin: auto;}",
-        "@media only screen and (max-width: 767px) {.image--root {--image--height: 180px; } img {max-width: 100px; margin-top: 20px; }}"
-      ],
+      "custom_css": [],
       "settings": {
         "show-title": true,
         "heading-type": "featured-heading",
@@ -24,10 +21,10 @@
         "white-text": false,
         "show-image": true,
         "use-image-fallback": true,
-        "image-display-type": "small",
-        "aspect-ratio": 56,
-        "mobile-image-display-type": "medium",
-        "mobile-aspect-ratio": 134,
+        "image-display-type": "fit-screen",
+        "aspect-ratio": 86,
+        "mobile-image-display-type": "aspect-ratio",
+        "mobile-aspect-ratio": 120,
         "text-style": "none",
         "overlay-style": "none",
         "parallax-enabled": false
