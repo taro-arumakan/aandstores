@@ -200,7 +200,7 @@
     data-swatch-option-position="{{ swatch_option.position }}"
   {% endif %}
 >
-  <a href="{{ url }}" class="product-card--image-wrapper">
+  <a href="{{ url }}" class="product-card--image-wrapper {{ trans_class }}">
     {%- if display_labels != blank or featured_label != blank -%}
       <div
         class="product--labels"
@@ -241,7 +241,7 @@
     -%}
   </a>
 
-  <div class="product-card--details">
+  <div class="product-card--details {{ trans_class2 }}">
     <div class="product-card--details-wrapper">
       {%- if show_vendor -%}
         <div class="product--vendor" data-item="nav-text--sub">

@@ -81,8 +81,13 @@
         assign loading = 'eager'
       endif
 
+      assign trans_classes = "reveal_tran_bt,reveal_tran_rl,reveal_tran_lr,reveal_tran_tb" | split: ","
+
       for product in collection.products limit: max_products
-        render 'product-card', product_item: product, section_id: section.id, sizes: sizes, loading: loading
+        assign trans_class_index = "now" | date: "%N" | modulo: 4
+        assign trans_class_index_two = "now" | date: "%N" | modulo: 4
+
+        render 'product-card', product_item: product, section_id: section.id, sizes: sizes, loading: loading, trans_class: trans_classes[trans_class_index] trans_class2: trans_classes[trans_class_index_two]
 
         unless forloop.last
           echo '<span class="divider"></span>'
