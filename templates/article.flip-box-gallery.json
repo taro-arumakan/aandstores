@@ -10,7 +10,7 @@
 {
   "sections": {
     "main": {
-      "type": "article",
+      "type": "article-flip-box-gallery",
       "settings": {
         "show-featured": true,
         "heading-position": "above",

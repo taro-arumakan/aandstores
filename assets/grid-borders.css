@@ -226,6 +226,7 @@ product-card .product-card--details {
   text-align: center;
   font-size: var(--font--paragraph--size);
   letter-spacing: -1px;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 767px) {
