@@ -11,24 +11,39 @@
   "sections": {
     "1632436597fbc1d0e4": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
+        "top-border": false,
         "spacing-above": false,
         "spacing-below": true,
         "background-color": "none",
         "container-width": "6",
-        "white-text": "false",
+        "white-text": false,
         "overlap": false,
+        "heading-type": "section-heading",
         "text-position": "overlay",
+        "text-horizontal-alignment": "center",
+        "text-vertical-alignment": "center",
         "text-width": "medium",
         "text-style": "none",
+        "text-background-color": "transparent",
+        "image-display-type": "medium",
+        "aspect-ratio": 56,
         "overlay-style": "darken-bottom",
         "parallax-enabled": false,
         "overline": "Contact us",
         "title": "Get in touch",
+        "highlight-type": "italic",
+        "highlight-color": "#FFDD66",
+        "highlight-text": "#000000",
         "description": "",
         "link-url": "",
         "link-text": "",
-        "mobile-overlay": true
+        "mobile-overlay": true,
+        "mobile-hide-description": false,
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134,
+        "mobile-text-alignment": "center"
       }
     },
     "main": {
@@ -44,30 +59,47 @@
     },
     "16324378141979f11c": {
       "type": "featured-text",
+      "disabled": true,
       "settings": {
+        "top-border": false,
         "spacing-above": false,
         "spacing-below": true,
         "background-color": "none",
         "white-text": false,
+        "text-alignment": "center",
+        "heading-type": "section-heading",
         "container-width": "1",
         "overline": "",
-        "heading": ""
+        "heading": "",
+        "highlight-type": "italic",
+        "highlight-color": "#FFDD66",
+        "highlight-text": "#000000",
+        "description": "<p>Introduce your brand, products and vision statement and welcome customers to your store.</p>",
+        "link-url": "/",
+        "link-text": "Optional link"
       }
     },
     "1632180071f18cee62": {
       "type": "contact",
       "settings": {
-        "spacing-above": false,
+        "top-border": false,
+        "spacing-above": true,
         "spacing-below": true,
         "background-color": "none",
         "white-text": false,
+        "heading-alignment": "center",
         "container-width": "2",
         "heading": "",
-        "store-address": "842 Beech Street\nMountain View, CA 94041",
-        "store-hours": "<p>Monday - Friday<br/>12pm - 8pm<br/><br/>Saturday - Sunday<br/>12pm - 5pm</p>",
-        "show-social-sharing": true
+        "store-address": "",
+        "store-hours": "",
+        "show-social-sharing": false
       }
     }
   },
-  "order": ["1632436597fbc1d0e4", "main", "16324378141979f11c", "1632180071f18cee62"]
+  "order": [
+    "1632436597fbc1d0e4",
+    "main",
+    "16324378141979f11c",
+    "1632180071f18cee62"
+  ]
 }
