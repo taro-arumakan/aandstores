@@ -106,8 +106,8 @@
     "custom_content_zprGrU": {
       "type": "custom-content",
       "custom_css": [
-        "h1 {font-size: var(--font--section--size);}",
-        "@media only screen and (max-width: 767px) {h1 {font-size: var(--font--section--mobile-size); }}"
+        "h2 {font-size: calc(var(--font--section--size) - 6px);}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: calc(var(--font--section--mobile-size) - 4px); }}"
       ],
       "settings": {
         "top-border": false,
@@ -117,7 +117,7 @@
         "white-text": false,
         "text-alignment": "center",
         "container-width": "6",
-        "custom_html": "<div><h3>BRANDS</h3></div>"
+        "custom_html": "<div><h2 class=\"reveal_tran_rl\">BRANDS</h2></div>"
       }
     },
     "featured_collection_HTrk9e": {
@@ -161,9 +161,10 @@
         "aspect-ratio": 56,
         "overlay-style": "none",
         "parallax-enabled": false,
-        "image": "shopify://shop_images/hibrow_brand_banner.png",
+        "image": "shopify://shop_images/HIBROW_d499043f-dbda-4802-9a81-59f3b3c86846.jpg",
         "overline": "",
         "title": "",
+        "title-image": "shopify://shop_images/hibrow_logo_w.png",
         "highlight-type": "italic",
         "highlight-color": "#ffdd66",
         "highlight-text": "#000000",
@@ -207,7 +208,7 @@
         "spacing-above": false,
         "spacing-below": false,
         "background-color": "none",
-        "container-width": "6",
+        "container-width": "3",
         "white-text": true,
         "overlap": false,
         "heading-type": "section-heading",
@@ -240,8 +241,8 @@
     "featured_collection_43jdDr": {
       "type": "featured-collection",
       "custom_css": [
-        "h2 {padding-top: var(--spacing--block);}",
-        "[data-container=\"block\"][data-text-alignment=\"center\"] {display: none;}"
+        ".featured-collection--title {padding: var(--spacing--section);}",
+        ".featured-collection--wrapper {grid-row-gap: 0;}"
       ],
       "settings": {
         "top-border": false,
@@ -269,7 +270,7 @@
         "background-color": "none",
         "white-text": false,
         "heading-alignment": "center",
-        "heading": "Recently viewed"
+        "heading": "Recently Viewed"
       }
     }
   },

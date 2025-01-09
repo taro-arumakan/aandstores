@@ -58,6 +58,7 @@
       "custom_css": [],
       "settings": {
         "show-title": true,
+        "title-image": "shopify://shop_images/hibrow_logo_w.png",
         "heading-type": "featured-heading",
         "heading-alignment": "left",
         "show-description": false,
@@ -76,14 +77,13 @@
     },
     "navigation": {
       "type": "collection-navigation",
-      "disabled": true,
       "settings": {
-        "show-browse-button": true,
+        "show-browse-button": false,
         "show-sort-button": true,
         "show-refine-button": true,
         "show-layout-buttons": true,
         "show-collections-list": true,
-        "custom-list-collections": "",
+        "custom-list-collections": "hibrow-collections",
         "show-sort-list": true,
         "show-refine-list": true,
         "swatches": "circle",

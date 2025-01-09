@@ -73,22 +73,6 @@
         "parallax-enabled": false
       }
     },
-    "navigation": {
-      "type": "collection-navigation",
-      "disabled": true,
-      "settings": {
-        "show-browse-button": true,
-        "show-sort-button": true,
-        "show-refine-button": true,
-        "show-layout-buttons": true,
-        "show-collections-list": true,
-        "custom-list-collections": "",
-        "show-sort-list": true,
-        "show-refine-list": true,
-        "swatches": "circle",
-        "show-search-link": true
-      }
-    },
     "footer-promo": {
       "type": "image-with-text",
       "settings": {
@@ -126,6 +110,21 @@
         "mobile-text-alignment": "center"
       }
     },
+    "navigation": {
+      "type": "collection-navigation",
+      "settings": {
+        "show-browse-button": false,
+        "show-sort-button": true,
+        "show-refine-button": true,
+        "show-layout-buttons": true,
+        "show-collections-list": false,
+        "custom-list-collections": "",
+        "show-sort-list": true,
+        "show-refine-list": true,
+        "swatches": "circle",
+        "show-search-link": true
+      }
+    },
     "main": {
       "type": "main-collection",
       "custom_css": [
@@ -153,8 +152,8 @@
   "order": [
     "header-promo",
     "collection-header",
-    "navigation",
     "footer-promo",
+    "navigation",
     "main",
     "recent-products"
   ]
