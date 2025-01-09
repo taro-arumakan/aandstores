@@ -10,6 +10,7 @@
   assign show_description = section.settings.show-description
   assign show_image = section.settings.show-image
   assign show_title = section.settings.show-title
+  assign title_image = section.settings.title-image
   assign parallax_enabled = section.settings.parallax-enabled
   assign text_style = section.settings.text-style
   assign use_image_fallback = section.settings.use-image-fallback
@@ -100,7 +101,7 @@
           data-text-style="{{ text_style }}"
         {% endif %}
       >
-        {%- if show_title and collection.title != blank -%}
+        {%- if show_title and collection.title != blank or title_image != blank -%}
           <div
             {% unless settings.transitions--text %}
               data-transition-item="viewport"
@@ -108,7 +109,14 @@
             {% endunless %}
           >
             <h1 data-item="{{ heading_type }}" data-item="section-heading">
-              {{- collection.title -}}
+              {% if title_image == blank %}
+                {{- collection.title -}}
+              {% else %}
+                {%-
+                  render 'image',
+                  image: title_image
+                -%}
+              {% endif %}
             </h1>
           </div>
         {%- endif -%}
@@ -148,6 +156,11 @@
       "label": "Show collection title",
       "type": "checkbox",
       "default": true
+    },
+    {
+      "id": "title-image",
+      "label": "Title Image",
+      "type": "image_picker"
     },
     {
       "id": "heading-type",
