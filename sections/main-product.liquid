@@ -66,7 +66,7 @@
       </div>
     {%- endif -%}
 
-    <div class="main-product--desktop" data-mq="medium-large">
+    <div class="main-product--left">
       {%-
         render 'product--blocks',
         product: product,
@@ -79,6 +79,43 @@
         render 'product-media--variants',
         product: product,
         product_id: product_id,
+        media_size: "mobile",
+        layout: 'one',
+        video_looping_enabled: video_looping_enabled,
+        media_index_start: 0,
+        media_index_end: 0,
+        render_3d: true
+      -%}
+
+      {%- form 'product', product, class: 'main-product--form' -%}
+        {%- if breadcrumbs_enabled -%}
+          <div
+            class="product--breadcrumbs"
+            data-mq="medium-large"
+            {% unless settings.transitions--text %}
+              data-transition-item="{{ section.id }}"
+            {% endunless %}
+          >
+            {%- render 'breadcrumbs' -%}
+          </div>
+        {%- endif -%}
+
+        {%-
+          render 'product--blocks',
+          product: product,
+          section: section,
+          onboarding: false,
+          form: form
+        -%}
+      {%- endform -%}
+    </div>
+
+
+    <div class="main-product--desktop" data-mq="medium-large">
+      {%-
+        render 'product-media--variants',
+        product: product,
+        product_id: product_id,
         layout: media_layout,
         media_gap: media_gap,
         media_size: 'desktop',
@@ -87,7 +124,8 @@
         thumbnail_width: thumbnail_width,
         variant_scroll_enabled: variant_scroll_enabled,
         video_looping_enabled: video_looping_enabled,
-        zoom_enabled: zoom_enabled
+        zoom_enabled: zoom_enabled,
+        media_index_start: 1
       -%}
     </div>
 
@@ -96,13 +134,6 @@
       data-mq="small"
       data-layout="{{ mobile_media_layout }}"
     >
-      {%-
-        render 'product--blocks',
-        product: product,
-        block: 'heading',
-        section: nil,
-        onboarding: false
-      -%}
       {%- if mobile_media_layout == 'thumbnails' -%}
         {%-
           render 'product-media--variants',
@@ -121,31 +152,19 @@
           product: product,
           video_looping_enabled: video_looping_enabled
         -%}
-
+      {%- else -%}
+        {%-
+          render 'product-media--variants',
+          product: product,
+          product_id: product_id,
+          media_size: "mobile",
+          layout: mobile_media_layout,
+          video_looping_enabled: video_looping_enabled,
+          media_index_start: 1,
+          render_3d: false
+        -%}
       {%- endif -%}
     </div>
-
-    {%- form 'product', product, class: 'main-product--form' -%}
-      {%- if breadcrumbs_enabled -%}
-        <div
-          class="product--breadcrumbs"
-          data-mq="medium-large"
-          {% unless settings.transitions--text %}
-            data-transition-item="{{ section.id }}"
-          {% endunless %}
-        >
-          {%- render 'breadcrumbs' -%}
-        </div>
-      {%- endif -%}
-
-      {%-
-        render 'product--blocks',
-        product: product,
-        section: section,
-        onboarding: false,
-        form: form
-      -%}
-    {%- endform -%}
   </div>
 </div>
 
@@ -334,7 +353,8 @@
       "label": "Media layout",
       "options": [
         { "label": "Slideshow", "value": "slideshow" },
-        { "label": "Thumbnails", "value": "thumbnails" }
+        { "label": "Thumbnails", "value": "thumbnails" },
+        { "label": "One column", "value": "one" }
       ],
       "default": "slideshow"
     }

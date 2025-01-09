@@ -6,6 +6,7 @@
 .main-product--root {
   padding: 32px var(--grid-spacing-base);
 }
+
 .layout--main-content {
   padding-left: var(--grid-spacing-base);
   padding-right: var(--grid-spacing-base);
@@ -123,6 +124,7 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1027px) {
+
   :not(:is(.recent-products--grid,
            .related-products--grid))>.product-card--root:nth-of-type(3n)::before {
     width: 0;
@@ -130,6 +132,7 @@
 }
 
 @media only screen and (min-width: 1028px) {
+
   :not(:is(.recent-products--grid,
            .related-products--grid))>.product-card--root:nth-of-type(4n)::before {
     width: 0;
@@ -137,10 +140,11 @@
 }
 
 @media only screen and (min-width: 768px) {
+
   :is(.recent-products--grid,
       .related-products--grid)>.product-card--root:nth-of-type(1) {
-        border-left: 1px solid #e2e2e2;
-      }
+    border-left: 1px solid #e2e2e2;
+  }
 }
 
 product-card .product-card--details {
@@ -389,10 +393,21 @@ product-card .product-card--details {
 .product-media--thumb {
   display: flex
 }
-.product-media--thumb>img, .product-media--root>img {
+
+.product-media--thumb>img,
+.product-media--root>img {
   object-fit: contain;
-  aspect-ratio: 1;
   align-self: center;
+}
+
+@media only screen and (max-width:767px) {
+  :not(.main-product--left) > .product-media--container[data-container] {
+    grid-gap: 1px;
+    padding: 1px 0;
+  }
+  :not(.main-product--left)>product-media-variants {
+    background-color: #e0e0e0;
+  }
 }
 
 /* related, recent, search products */
@@ -415,10 +430,11 @@ product-card .product-card--details {
   border-left: 1px solid #e2e2e2;
 }
 
-.predictive-search--product-grid > #shopify-section-product-card::after {
+.predictive-search--product-grid>#shopify-section-product-card::after {
   width: 100%;
   left: 0;
 }
+
 .predictive-search--product-grid .product-card--details {
   min-height: 6.5rem;
   /* cannot divide by a unit value
@@ -499,6 +515,17 @@ product-media-variants.product-media--variants--root {
   background-color: #e0e0e0;
   position: absolute;
   top: 0;
+  left: calc(var(--grid-spacing-base) * -2);
+}
+
+.product-view-in-space[data-item=button-full]::after {
+  content: "";
+  display: block;
+  width: calc(100% + var(--grid-spacing-base) * 4);
+  height: 1px;
+  background-color: #e0e0e0;
+  position: absolute;
+  bottom: 0;
   left: calc(var(--grid-spacing-base) * -2);
 }
 

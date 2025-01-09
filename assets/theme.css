@@ -8325,10 +8325,12 @@ input[type=text]::-ms-clear {
     top: var(--sticky-offset)
   }
 
+  .main-product--left {
+    width: 80vw;
+  }
   .main-product--form {
     position: sticky;
     top: calc(var(--sticky-offset) + var(--spacing--1));
-    width: var(--text-column-width);
     height: -moz-fit-content;
     height: fit-content;
     transition: top .2s var(--transition--standard)
