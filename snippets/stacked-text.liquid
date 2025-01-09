@@ -1,6 +1,6 @@
 {%- liquid
   assign text_exists = false
-  if overline != blank or title != blank or description != blank or link_text != blank
+  if overline != blank or title != blank or description != blank or link_text != blank or title_image != blank
     assign text_exists = true
   endif
 
@@ -58,6 +58,23 @@
               highlight_text: highlight_text,
               highlight_type: highlight_type
             -%}
+          </h2>
+        </div>
+      {%- endunless -%}
+
+      {%- unless title_image == blank -%}
+        <div
+          {% unless settings.transitions--text %}
+            data-transition-item="{{ id }}"
+          {% endunless %}
+        >
+          <h2 class="stacked-text--title stacked-text--title-image" data-item="{{ heading_type }}">
+
+            {%-
+              render 'image',
+              image: title_image
+            -%}
+
           </h2>
         </div>
       {%- endunless -%}

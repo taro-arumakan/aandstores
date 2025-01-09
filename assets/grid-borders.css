@@ -550,3 +550,12 @@ product-media-variants.product-media--variants--root {
     top: var(--spacing--section--mobile--y);
   }
 }
+
+.stacked-text--title-image {
+  max-width: 30vw;
+  margin: auto;
+}
+
+.collection-header--heading img {
+  max-width: 30vw;
+}

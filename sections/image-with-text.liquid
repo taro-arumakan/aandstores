@@ -74,6 +74,7 @@
     text_position: text_position,
     text_width: section.settings.text-width,
     title: section.settings.title,
+    title_image: section.settings.title-image,
     text_x_alignment: section.settings.text-horizontal-alignment,
     text_y_alignment: section.settings.text-vertical-alignment,
     white_text: section.settings.white-text
@@ -408,6 +409,11 @@
       "type": "text",
       "default": "Image with text",
       "info": "Highlight headings by wrapping text with square brackets, ie. This is [highlighted]."
+    },
+    {
+      "id": "title-image",
+      "label": "Heading Image",
+      "type": "image_picker"
     },
     {
       "id": "highlight-type",
