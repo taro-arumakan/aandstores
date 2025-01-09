@@ -54,7 +54,7 @@
           "type": "about",
           "settings": {
             "about-title": "",
-            "text": "<p>[current_year] © A&ST</p>",
+            "text": "<p>[current_year] © A&Stores</p>",
             "subscribe--show-social-icons": true
           }
         }
