@@ -56,10 +56,9 @@
         },
         "announcement_mN6xn6": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "icon": "none",
-            "text": "Just dropped! Shop our latest ... collection",
+            "text": "年末発送停止期間: 2024年12月31日(火) ~ 2025年1月5日(日)",
             "link": "",
             "hide-on-desktop": false,
             "hide-on-mobile": false,
@@ -108,10 +107,10 @@
         "arrows-enabled": true,
         "rotate-frequency": 7,
         "show-social-icons": true,
-        "show-region-selector": true,
-        "show-locale-selector": true,
+        "show-region-selector": false,
+        "show-locale-selector": false,
         "scroll-text": true,
-        "animation-speed": 3
+        "animation-speed": 7
       }
     },
     "split-announcements": {
@@ -182,7 +181,7 @@
         "blog"
       ],
       "settings": {
-        "layout": "left-left",
+        "layout": "center-below",
         "background-color": "none",
         "bottom-border": false,
         "white-text": false,
@@ -191,10 +190,10 @@
         "hide-on-scroll": true,
         "reduce-height": true,
         "overlap-behavior": "drawer",
-        "logo": "{{ shop.brand.logo }}",
-        "logo-height": 35,
-        "mobile-logo-height": 30,
-        "transparent-enabled": true,
+        "logo": "shopify://shop_images/A_ST_LOGO_BK.png",
+        "logo-height": 25,
+        "mobile-logo-height": 20,
+        "transparent-enabled": false,
         "transparent-white-text": false,
         "menu": "sidebar-menu",
         "search-enabled": true,
