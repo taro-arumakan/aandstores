@@ -534,3 +534,19 @@ product-media-variants.product-media--variants--root {
     display: none;
   }
 }
+[data-spacing-above=true]>.featured-content--root::before {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 1px;
+  background-color: #e0e0e0;
+  position: absolute;
+  top: var(--spacing--section--y);
+  left: calc(var(--grid-spacing-base) * -1);
+}
+
+@media only screen and (max-width: 767px) {
+  [data-spacing-above=true]>.featured-content--root::before {
+    top: var(--spacing--section--mobile--y);
+  }
+}
