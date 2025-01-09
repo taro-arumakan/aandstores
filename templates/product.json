@@ -98,7 +98,7 @@
         "container-width": "4",
         "spacing-above": true,
         "spacing-below": true,
-        "media-layout": "mixed",
+        "media-layout": "one",
         "text-column-width": 30,
         "media-gap": 1,
         "column-spacing": "close",
@@ -112,7 +112,7 @@
         "variant-scroll-enabled": true,
         "image-zoom-enabled": true,
         "loop-enabled": false,
-        "mobile-media-layout": "thumbnails"
+        "mobile-media-layout": "one"
       }
     },
     "4e9385a7-14ff-4617-8542-ed651a7ec51f": {
