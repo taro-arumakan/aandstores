@@ -18,11 +18,21 @@
   if layout == 'thumbnails' and product.media.size != 1
     assign load_thumbs = true
   endif
+
+  if media_index_start == blank
+    assign media_index_start = 0
+  endif
+
+  if media_index_end == blank
+    assign media_index_end = product.media.size
+  endif
+
 -%}
 
 {%- if product.media.size > 0 -%}
-  {%- for media in product.media -%}
+  {%- for i in (media_index_start..media_index_end) -%}
     {%- liquid
+      assign media = product.media[i]
       if media.media_type == "model"
         assign load_model = true
       elsif media.media_type == "video" or media.media_type == "external_video"
@@ -220,22 +230,23 @@
     </div>
   </div>
 
-  {%- comment -%}Add the "view in your space" button, which allows to show the product in customer's environment (if the device supports it){%- endcomment -%}
-  {%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
-  {%- if first_3d_model -%}
+  {%- if render_3d -%}
+    {%- comment -%}Add the "view in your space" button, which allows to show the product in customer's environment (if the device supports it){%- endcomment -%}
+    {%- assign first_3d_model = product.media | where: 'media_type', 'model' | first -%}
+    {%- if first_3d_model -%}
+      <script type="application/json" id="{{ product_id }}-model_json">
+        {%- assign product_models = product.media | where: 'media_type', 'model' -%}
+        {{- product_models | json -}}
+      </script>
 
-  <script type="application/json" id="{{ product_id }}-model_json">
-    {%- assign product_models = product.media | where: 'media_type', 'model' -%}
-    {{- product_models | json -}}
-  </script>
+      <link rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'; this.onload = null">
 
-  <link rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'; this.onload = null">
-
-  <button class="button product-view-in-space" data-item="button-full" data-shopify-xr data-shopify-model3d-id="{{ first_3d_model.id }}" data-shopify-model3d-default-id="{{ first_3d_model.id }}" data-shopify-title="{{ product.title | escape }}" data-shopify-xr-hidden>
-    <span class="text-with-icon justify-center">
-      {%- render 'icons', icon: '3d-badge' -%} {{- 'products.view_ar' | t -}}
-    </span>
-  </button>
+      <button class="button product-view-in-space" data-item="button-full" data-shopify-xr data-shopify-model3d-id="{{ first_3d_model.id }}" data-shopify-model3d-default-id="{{ first_3d_model.id }}" data-shopify-title="{{ product.title | escape }}" data-shopify-xr-hidden>
+        <span class="text-with-icon justify-center">
+          {%- render 'icons', icon: '3d-badge' -%} {{- 'products.view_ar' | t -}}
+        </span>
+      </button>
+    {%- endif -%}
   {%- endif -%}
 
   {%- if load_thumbs -%}
