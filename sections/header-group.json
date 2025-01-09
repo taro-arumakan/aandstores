@@ -56,6 +56,7 @@
         },
         "announcement_mN6xn6": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "icon": "none",
             "text": "年末発送停止期間: 2024年12月31日(火) ~ 2025年1月5日(日)",
@@ -190,7 +191,7 @@
         "hide-on-scroll": true,
         "reduce-height": true,
         "overlap-behavior": "drawer",
-        "logo": "shopify://shop_images/A_ST_LOGO_BK.png",
+        "logo": "shopify://shop_images/A_Stores_Condensed_Logo_4c147b1f-949c-4feb-b9a6-3f49e7ff0b67.png",
         "logo-height": 25,
         "mobile-logo-height": 20,
         "transparent-enabled": false,
