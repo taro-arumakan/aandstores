@@ -19,7 +19,7 @@
         "show-description": false,
         "description-alignment": "with-title",
         "white-text": false,
-        "show-image": true,
+        "show-image": false,
         "use-image-fallback": true,
         "image-display-type": "fit-screen",
         "aspect-ratio": 86,
