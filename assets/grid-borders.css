@@ -426,3 +426,28 @@ product-media-variants.product-media--variants--root {
 .collection-header--heading img {
   max-width: 30vw;
 }
+
+password-element {
+  margin: var(--grid-spacing-base) 0;
+  padding: 0;
+}
+password-element::before {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 1px;
+    background-color: #e0e0e0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+password-element::after {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 1px;
+  background-color: #e0e0e0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
