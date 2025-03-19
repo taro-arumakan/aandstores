@@ -11,23 +11,120 @@
   "type": "footer",
   "name": "Footer Group",
   "sections": {
-    "custom_content_EGYi9q": {
-      "type": "custom-content",
+    "grid_with_overlay_e7AdML": {
+      "type": "grid-with-overlay",
+      "blocks": {
+        "text_d9jBBw": {
+          "type": "text",
+          "settings": {
+            "x-blocks": "1",
+            "y-blocks": "1",
+            "text-background-color": "transparent",
+            "white-text": false,
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify://collections/hibrow",
+            "link-text": "",
+            "title-image": "shopify://shop_images/logo.png",
+            "mobile-text-alignment": "center"
+          }
+        },
+        "text_8PhkBb": {
+          "type": "text",
+          "settings": {
+            "x-blocks": "1",
+            "y-blocks": "1",
+            "text-background-color": "transparent",
+            "white-text": false,
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify://collections/photozeniagoods-1",
+            "link-text": "",
+            "title-image": "shopify://shop_images/PZG_02.png",
+            "mobile-text-alignment": "center"
+          }
+        },
+        "text_HpxKJi": {
+          "type": "text",
+          "settings": {
+            "x-blocks": "1",
+            "y-blocks": "1",
+            "text-background-color": "transparent",
+            "white-text": false,
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify://collections/twb",
+            "link-text": "",
+            "title-image": "shopify://shop_images/TWB_logo.png",
+            "mobile-text-alignment": "center"
+          }
+        },
+        "text_pMERT4": {
+          "type": "text",
+          "settings": {
+            "x-blocks": "1",
+            "y-blocks": "1",
+            "text-background-color": "transparent",
+            "white-text": false,
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify://collections/kimshop",
+            "link-text": "",
+            "title-image": "shopify://shop_images/kimshop_logo.png",
+            "mobile-text-alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "text_d9jBBw",
+        "text_8PhkBb",
+        "text_HpxKJi",
+        "text_pMERT4"
+      ],
       "custom_css": [
-        ".custom-logo__wrapper {max-width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: row; margin-top: 3rem; margin-bottom: 3rem;}",
-        "img {max-width: 100%; height: auto; border-style: none; vertical-align: center;}",
-        ".custom-logo__link:first-of-type {margin-right: 64px; margin-bottom: 0;}",
-        ".custom-logo__link {max-width: 100px;}"
+        ".featured-grid--root {padding: 0;}",
+        ".featured-grid--body {gap: 0;}",
+        ".featured-grid--item {min-height: 80px;}"
       ],
       "settings": {
         "top-border": false,
-        "spacing-above": false,
+        "spacing-above": true,
         "spacing-below": false,
         "background-color": "none",
-        "white-text": false,
-        "text-alignment": "center",
-        "container-width": "1",
-        "custom_html": "<div class=\"custom-logo__wrapper\">\n          <a href=\"/collections/hibrow\" class=\"custom-logo__link\">\n            <img src=\"//aandstores.com/cdn/shop/files/logo.png?v=1675847388\" alt=\"\">\n          </a>\n          <a href=\"/collections/photozeniagoods\" class=\"custom-logo__link\">\n            <img src=\"//aandstores.com/cdn/shop/files/PZG_02.png?v=1732588253\" alt=\"\">\n          </a>\n        </div>"
+        "heading-white-text": false,
+        "section-alignment": "center",
+        "container-width": "2",
+        "spacing": true,
+        "width": 4,
+        "row-height": 250,
+        "white-text": true,
+        "text-style": "none",
+        "heading-type": "block-heading",
+        "overlay-style": "none",
+        "overline": "",
+        "heading": "",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-width": "2",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134
       }
     },
     "footer": {
@@ -77,7 +174,7 @@
     }
   },
   "order": [
-    "custom_content_EGYi9q",
+    "grid_with_overlay_e7AdML",
     "footer"
   ]
 }

@@ -142,6 +142,7 @@
     },
     "image_with_text_7K63Wt": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "top-border": false,
         "spacing-above": true,
@@ -200,6 +201,7 @@
     },
     "image_with_text_DwJCPd": {
       "type": "image-with-text",
+      "disabled": true,
       "custom_css": [
         "[data-item=\"overline\"] {padding-top: 70%;}"
       ],
@@ -236,6 +238,106 @@
         "mobile-image-display-type": "aspect-ratio",
         "mobile-aspect-ratio": 50,
         "mobile-text-alignment": "center"
+      }
+    },
+    "grid_with_overlay_QX9TkN": {
+      "type": "grid-with-overlay",
+      "blocks": {
+        "image_G8jrej": {
+          "type": "image",
+          "settings": {
+            "x-blocks": "1",
+            "y-blocks": "1",
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/HIBROW_d499043f-dbda-4802-9a81-59f3b3c86846.jpg",
+            "title": "",
+            "link-url": "shopify://collections/hibrow",
+            "link-text": "",
+            "title-image": "shopify://shop_images/hibrow_logo_w.png",
+            "mobile-text-alignment": "center"
+          }
+        },
+        "image_ALHQL4": {
+          "type": "image",
+          "settings": {
+            "x-blocks": "1",
+            "y-blocks": "1",
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/photozeniagoods_banner.jpg",
+            "title": "",
+            "link-url": "shopify://collections/photozeniagoods-1",
+            "link-text": "",
+            "mobile-text-alignment": "center"
+          }
+        },
+        "image_FpNbwT": {
+          "type": "image",
+          "settings": {
+            "x-blocks": "1",
+            "y-blocks": "1",
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/TWB_banner.jpg",
+            "title": "",
+            "link-url": "shopify://collections/twb",
+            "link-text": "",
+            "mobile-text-alignment": "center"
+          }
+        },
+        "image_3TDKDC": {
+          "type": "image",
+          "settings": {
+            "x-blocks": "1",
+            "y-blocks": "1",
+            "text-width": "medium",
+            "text-horizontal-alignment": "center",
+            "text-vertical-alignment": "center",
+            "image": "shopify://shop_images/kimshop_banner.jpg",
+            "title": "",
+            "link-url": "shopify://collections/kimshop",
+            "link-text": "",
+            "mobile-text-alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_G8jrej",
+        "image_ALHQL4",
+        "image_FpNbwT",
+        "image_3TDKDC"
+      ],
+      "custom_css": [
+        ".featured-grid--root {padding: 0;}",
+        ".featured-grid--body {grid-gap: 1px; background-color: #e0e0e0;}"
+      ],
+      "settings": {
+        "top-border": false,
+        "spacing-above": false,
+        "spacing-below": false,
+        "background-color": "none",
+        "heading-white-text": false,
+        "section-alignment": "center",
+        "container-width": "6",
+        "spacing": true,
+        "width": 2,
+        "row-height": 380,
+        "white-text": true,
+        "text-style": "none",
+        "heading-type": "block-heading",
+        "overlay-style": "none",
+        "overline": "",
+        "heading": "",
+        "description": "",
+        "link-url": "",
+        "link-text": "",
+        "mobile-width": "2",
+        "mobile-image-display-type": "original",
+        "mobile-aspect-ratio": 134
       }
     },
     "featured_collection_43jdDr": {
@@ -281,6 +383,7 @@
     "image_with_text_7K63Wt",
     "featured_collection_MBXmKK",
     "image_with_text_DwJCPd",
+    "grid_with_overlay_QX9TkN",
     "featured_collection_43jdDr",
     "recent_products_CCaAjr"
   ]

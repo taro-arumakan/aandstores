@@ -139,6 +139,7 @@
           assign block_link_url = block.settings.link-url
           assign description = blank
           assign title = block.settings.title
+          assign title_image = block.settings.title-image
           assign text_width = block.settings.text-width
           assign text_x_alignment = block.settings.text-horizontal-alignment
           assign text_y_alignment = block.settings.text-vertical-alignment
@@ -280,7 +281,7 @@
             {%- endif -%}
 
             {%- unless block.type == 'video' -%}
-              {%- unless overline == blank and title == blank and block_link_text == blank and description == blank -%}
+              {%- unless overline == blank and title == blank and title_image == blank and block_link_text == blank and description == blank -%}
                 {%-
                   render 'stacked-text',
                   button_style: 'block-link',
@@ -294,6 +295,7 @@
                   style: text_style,
                   title: title,
                   white_text: white_text,
+                  title_image: title_image,
                   width: text_width,
                   x_alignment: text_x_alignment,
                   y_alignment: text_y_alignment
@@ -718,6 +720,11 @@
           "default": "Optional link"
         },
         {
+          "id": "title-image",
+          "label": "Heading Image",
+          "type": "image_picker"
+        },
+        {
           "type": "header",
           "content": "Mobile"
         },
@@ -866,6 +873,11 @@
           "label": "Optional link",
           "type": "text",
           "default": "Optional link"
+        },
+        {
+          "id": "title-image",
+          "label": "Heading Image",
+          "type": "image_picker"
         },
         {
           "type": "header",
