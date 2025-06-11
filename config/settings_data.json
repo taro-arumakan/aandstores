@@ -60,7 +60,19 @@
     "social--instagram--url": "https://www.instagram.com/aandstores",
     "preset": "beauty",
     "search-enabled": true,
-    "content_for_index": []
+    "content_for_index": [],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "back-in-stock-restock-alerts-4bb73be2-b7c2-4870-949f-c528145452a3": {
+        "type": "shopify://apps/back-in-stock-restock-alerts/blocks/main/4bb73be2-b7c2-4870-949f-c528145452a3",
+        "disabled": false,
+        "settings": {}
+      }
+    }
   },
   "presets": {
     "Beauty": {
@@ -192,5 +204,11 @@
       "cart--type": "drawer",
       "cart--show-note": true
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".restock-rocket-button {margin-top: 0 !important; height: 45px !important;}",
+      "#form-Select,#form-Description,#form-Email,#form-Consent-Container {font-weight: 400 !important;}"
+    ]
   }
 }
